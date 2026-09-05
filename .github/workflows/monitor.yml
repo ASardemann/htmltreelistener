@@ -29,9 +29,18 @@ jobs:
         id: monitor
         continue-on-error: true
         env:
-          SITEMAP_URL: ${{ vars.SITEMAP_URL }}
+          # Gilt für alle Sites
           IGNORE_SELECTORS: ${{ vars.IGNORE_SELECTORS || '.psac-post-slider' }}
+          IGNORE_PATTERNS: ${{ vars.IGNORE_PATTERNS }}
+          # Site 1
+          SITEMAP_URL: ${{ vars.SITEMAP_URL }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          # Site 2 (optional – weitere Sites analog mit _3, _4, ...)
+          SITEMAP_URL_2: ${{ vars.SITEMAP_URL_2 }}
+          IGNORE_SELECTORS_2: ${{ vars.IGNORE_SELECTORS_2 }}
+          SLACK_WEBHOOK_URL_2: ${{ secrets.SLACK_WEBHOOK_URL_2 }}
+          MAIL_TO_2: ${{ secrets.MAIL_TO_2 }}
+          # Mail (gemeinsam)
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SMTP_USER: ${{ secrets.SMTP_USER }}

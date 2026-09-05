@@ -1,4 +1,4 @@
-"""Überwacht alle Seiten einer Sitemap auf Änderungen im HTML-Quellcode."""
+"""Überwacht alle Seiten einer oder mehrerer Sitemaps auf Änderungen im HTML-Quellcode."""
 
 from __future__ import annotations
 
@@ -11,6 +11,7 @@ import re
 import smtplib
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from email.message import EmailMessage
 from pathlib import Path
@@ -28,8 +29,13 @@ REPORT_WINDOW_HOURS = int(os.environ.get("REPORT_WINDOW_HOURS", "24"))
 MAX_DIFF_LINES = int(os.environ.get("MAX_DIFF_LINES", "200"))
 SLACK_MAX_CHARS = int(os.environ.get("SLACK_MAX_CHARS", "3500"))
 ALWAYS_NOTIFY = os.environ.get("ALWAYS_NOTIFY", "true").lower() in ("1", "true", "yes")
-# CSS-Selektoren (kommagetrennt) für dynamische Bereiche, die vor dem Vergleich entfernt werden.
-IGNORE_SELECTORS = [s.strip() for s in os.environ.get("IGNORE_SELECTORS", "").split(",") if s.strip()]
+
+# Regex-Muster für Werte, die sich bei jedem Abruf ändern und durch einen Platzhalter ersetzt werden.
+# Standard: 13-stellige Hex-IDs in Anführungszeichen (WordPress uniqid(), z. B. Lightbox imageId / data-wp-key).
+BUILTIN_PATTERNS = [r"(?<=[\"'])[0-9a-f]{13}(?=[\"'])"]
+IGNORE_PATTERNS = [
+    re.compile(p) for p in BUILTIN_PATTERNS + [l.strip() for l in os.environ.get("IGNORE_PATTERNS", "").splitlines() if l.strip()]
+]
 
 session = requests.Session()
 session.headers["User-Agent"] = USER_AGENT
@@ -37,6 +43,43 @@ session.headers["User-Agent"] = USER_AGENT
 # Diffs enthalten beliebige Unicode-Zeichen; Windows-Konsolen sind sonst cp1252.
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
+
+@dataclass
+class Site:
+    sitemap: str
+    slack_webhook: str | None = None
+    mail_to: str | None = None
+    # CSS-Selektoren für dynamische Bereiche, die vor dem Vergleich entfernt werden.
+    ignore_selectors: list[str] = field(default_factory=list)
+
+
+def split_selectors(value: str) -> list[str]:
+    return [s.strip() for s in value.split(",") if s.strip()]
+
+
+def load_sites() -> list[Site]:
+    """Liest SITEMAP_URL, SITEMAP_URL_2, SITEMAP_URL_3, ... samt zugehöriger Variablen."""
+    # IGNORE_SELECTORS gilt für alle Sites; IGNORE_SELECTORS_n ergänzt sie für Site n.
+    global_selectors = split_selectors(os.environ.get("IGNORE_SELECTORS", ""))
+    sites: list[Site] = []
+    n = 1
+    while True:
+        suffix = "" if n == 1 else f"_{n}"
+        sitemap = os.environ.get(f"SITEMAP_URL{suffix}", "").strip()
+        if not sitemap:
+            break
+        extra = split_selectors(os.environ.get(f"IGNORE_SELECTORS{suffix}", "")) if suffix else []
+        sites.append(
+            Site(
+                sitemap=sitemap,
+                slack_webhook=os.environ.get(f"SLACK_WEBHOOK_URL{suffix}") or None,
+                mail_to=os.environ.get(f"MAIL_TO{suffix}") or os.environ.get("MAIL_TO") or None,
+                ignore_selectors=global_selectors + [s for s in extra if s not in global_selectors],
+            )
+        )
+        n += 1
+    return sites
 
 
 def fetch(url: str) -> bytes:
@@ -67,19 +110,21 @@ def sitemap_urls(sitemap_url: str, seen: set[str] | None = None) -> list[str]:
     return locs
 
 
-def strip_ignored(html: str) -> str:
-    if not IGNORE_SELECTORS:
+def strip_ignored(html: str, selectors: list[str]) -> str:
+    if not selectors:
         return html
     soup = BeautifulSoup(html, "html.parser")
-    for selector in IGNORE_SELECTORS:
+    for selector in selectors:
         for el in soup.select(selector):
             el.decompose()
     return str(soup)
 
 
-def normalize_html(html: str) -> str:
+def normalize_html(html: str, selectors: list[str] | None = None) -> str:
     # Whitespace angleichen und jedes Tag auf eine eigene Zeile setzen, damit Diffs lesbar bleiben.
-    html = strip_ignored(html.lstrip("\ufeff"))
+    html = strip_ignored(html.lstrip("\ufeff"), selectors or [])
+    for pattern in IGNORE_PATTERNS:
+        html = pattern.sub("«dyn»", html)
     html = re.sub(r"[ \t\r\f\v]+", " ", html)
     html = re.sub(r">\s*<", ">\n<", html)
     return "\n".join(line.strip() for line in html.splitlines() if line.strip())
@@ -96,10 +141,10 @@ def make_diff(old: str, new: str) -> str:
     return "\n".join(lines)
 
 
-def check_page(url: str, old_hash: str | None) -> tuple[str, str | None, str | None, str | None]:
+def check_page(url: str, old_hash: str | None, selectors: list[str]) -> tuple[str, str | None, str | None, str | None]:
     """Liefert (url, hash, diff, fehler). Bei Änderung wird der Snapshot ersetzt."""
     try:
-        html = normalize_html(fetch(url).decode("utf-8", errors="replace"))
+        html = normalize_html(fetch(url).decode("utf-8", errors="replace"), selectors)
         digest = hashlib.sha256(html.encode("utf-8")).hexdigest()
         if digest == old_hash:
             return url, digest, None, None
@@ -158,9 +203,8 @@ def build_diff_text(diffs: dict[str, str], max_chars: int | None = None) -> str:
     return text + "\n"
 
 
-def send_mail(subject: str, body: str) -> None:
+def send_mail(subject: str, body: str, to: str | None) -> None:
     host = os.environ.get("SMTP_HOST")
-    to = os.environ.get("MAIL_TO")
     if not host or not to:
         print("Mail übersprungen: SMTP_HOST oder MAIL_TO fehlt")
         return
@@ -187,19 +231,18 @@ def send_mail(subject: str, body: str) -> None:
     print(f"Mail an {to} gesendet")
 
 
-def send_slack(text: str) -> None:
-    webhook = os.environ.get("SLACK_WEBHOOK_URL")
+def send_slack(text: str, webhook: str | None) -> None:
     if not webhook:
-        print("Slack übersprungen: SLACK_WEBHOOK_URL fehlt")
+        print("Slack übersprungen: kein Webhook konfiguriert")
         return
     resp = session.post(webhook, json={"text": text}, timeout=TIMEOUT)
     resp.raise_for_status()
     print("Slack-Nachricht gesendet")
 
 
-def notify(subject: str, slack_text: str, mail_body: str) -> int:
+def notify(site: Site, subject: str, slack_text: str, mail_body: str) -> int:
     failures = []
-    for sender in (lambda: send_slack(slack_text), lambda: send_mail(subject, mail_body)):
+    for sender in (lambda: send_slack(slack_text, site.slack_webhook), lambda: send_mail(subject, mail_body, site.mail_to)):
         try:
             sender()
         except Exception as exc:  # noqa: BLE001
@@ -208,25 +251,24 @@ def notify(subject: str, slack_text: str, mail_body: str) -> int:
     return 1 if failures else 0
 
 
-def main() -> int:
-    sitemap_url = os.environ.get("SITEMAP_URL")
-    if not sitemap_url:
-        print("SITEMAP_URL ist nicht gesetzt", file=sys.stderr)
-        return 2
-
-    now = datetime.now(timezone.utc)
+def process_site(site: Site, state: dict, now: datetime) -> int:
     now_iso = now.isoformat(timespec="seconds")
-    state = load_state()
-    first_run = not state
+    print(f"\n### {site.sitemap}")
+    first_run = not any(entry.get("sitemap") == site.sitemap for entry in state.values())
 
-    urls = sorted(set(sitemap_urls(sitemap_url)))
+    try:
+        urls = sorted(set(sitemap_urls(site.sitemap)))
+    except Exception as exc:  # noqa: BLE001
+        print(f"Sitemap konnte nicht gelesen werden: {exc}", file=sys.stderr)
+        text = f"Sitemap {site.sitemap} konnte nicht gelesen werden: {exc}\n"
+        return notify(site, "[Website-Monitor] Fehler beim Lesen der Sitemap", text, text)
     print(f"{len(urls)} URLs aus Sitemap gelesen")
 
     results: dict[str, str] = {}
     diffs: dict[str, str] = {}
     errors: dict[str, str] = {}
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
-        futures = [pool.submit(check_page, url, (state.get(url) or {}).get("hash")) for url in urls]
+        futures = [pool.submit(check_page, url, (state.get(url) or {}).get("hash"), site.ignore_selectors) for url in urls]
         for future in as_completed(futures):
             url, digest, diff, error = future.result()
             if digest:
@@ -242,27 +284,29 @@ def main() -> int:
         if entry is None:
             added.append(url)
             # Beim Erstlauf gibt es keine "Änderung", daher kein Zeitstempel.
-            state[url] = {"hash": digest, "last_changed": None if first_run else now_iso, "last_checked": now_iso}
+            state[url] = {"sitemap": site.sitemap, "hash": digest, "last_changed": None if first_run else now_iso, "last_checked": now_iso}
         elif entry["hash"] != digest:
             changed.append(url)
             diffs.setdefault(url, "")
-            state[url] = {"hash": digest, "last_changed": now_iso, "last_checked": now_iso}
+            state[url] = {"sitemap": site.sitemap, "hash": digest, "last_changed": now_iso, "last_checked": now_iso}
         else:
+            entry["sitemap"] = site.sitemap
             entry["last_checked"] = now_iso
 
     # Seiten mit Abruf-Fehler behalten ihren alten Zustand, damit sie nicht als "entfernt" gelten.
-    removed = [url for url in state if url not in results and url not in errors]
+    removed = [
+        url for url, entry in state.items() if entry.get("sitemap") == site.sitemap and url not in results and url not in errors
+    ]
     for url in removed:
         del state[url]
         snapshot_path(url).unlink(missing_ok=True)
-
-    save_state(state)
 
     window_start = now - timedelta(hours=REPORT_WINDOW_HOURS)
     recent = [
         url
         for url, entry in state.items()
-        if entry.get("last_changed")
+        if entry.get("sitemap") == site.sitemap
+        and entry.get("last_changed")
         and datetime.fromisoformat(entry["last_changed"]) >= window_start
         and url not in changed
         and url not in added
@@ -274,25 +318,44 @@ def main() -> int:
         print("Erster Lauf – Basiszustand gespeichert")
         if not ALWAYS_NOTIFY:
             return 0
-        text = f"Website-Monitor eingerichtet für {sitemap_url}: {len(urls)} Seiten als Basiszustand gespeichert.\n"
-        return notify("[Website-Monitor] Eingerichtet", text, text)
+        text = f"Website-Monitor eingerichtet für {site.sitemap}: {len(urls)} Seiten als Basiszustand gespeichert.\n"
+        return notify(site, "[Website-Monitor] Eingerichtet", text, text)
 
     if not (changed or added or removed):
         print("Keine Änderungen")
         if not ALWAYS_NOTIFY:
             return 0
-        text = f"Keine Änderungen auf {sitemap_url} ({len(results)} Seiten geprüft).\n"
+        text = f"Keine Änderungen auf {site.sitemap} ({len(results)} Seiten geprüft).\n"
         if errors:
             text += f"\nFehler beim Abruf ({len(errors)}):\n" + "\n".join(f"  - {u}: {m}" for u, m in sorted(errors.items())) + "\n"
-        return notify("[Website-Monitor] Keine Änderungen", text, text)
+        return notify(site, "[Website-Monitor] Keine Änderungen", text, text)
 
-    report = build_report(sitemap_url, changed, added, removed, errors, recent)
+    report = build_report(site.sitemap, changed, added, removed, errors, recent)
     mail_body = report + build_diff_text(diffs)
     slack_text = report + build_diff_text(diffs, SLACK_MAX_CHARS)
     print(mail_body)
 
     subject = f"[Website-Monitor] {len(changed)} geändert, {len(added)} neu, {len(removed)} entfernt"
-    return notify(subject, slack_text, mail_body)
+    return notify(site, subject, slack_text, mail_body)
+
+
+def main() -> int:
+    sites = load_sites()
+    if not sites:
+        print("SITEMAP_URL ist nicht gesetzt", file=sys.stderr)
+        return 2
+
+    state = load_state()
+    # Einträge aus älteren Versionen ohne "sitemap"-Feld gehören zur ersten Site.
+    for entry in state.values():
+        entry.setdefault("sitemap", sites[0].sitemap)
+
+    now = datetime.now(timezone.utc)
+    exit_code = 0
+    for site in sites:
+        exit_code = max(exit_code, process_site(site, state, now))
+        save_state(state)
+    return exit_code
 
 
 if __name__ == "__main__":
