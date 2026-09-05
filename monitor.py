@@ -26,6 +26,7 @@ SNAPSHOT_DIR = STATE_FILE.parent / "snapshots"
 REPORT_WINDOW_HOURS = int(os.environ.get("REPORT_WINDOW_HOURS", "24"))
 MAX_DIFF_LINES = int(os.environ.get("MAX_DIFF_LINES", "200"))
 SLACK_MAX_CHARS = int(os.environ.get("SLACK_MAX_CHARS", "3500"))
+ALWAYS_NOTIFY = os.environ.get("ALWAYS_NOTIFY", "true").lower() in ("1", "true", "yes")
 
 session = requests.Session()
 session.headers["User-Agent"] = USER_AGENT
@@ -183,6 +184,17 @@ def send_slack(text: str) -> None:
     print("Slack-Nachricht gesendet")
 
 
+def notify(subject: str, slack_text: str, mail_body: str) -> int:
+    failures = []
+    for sender in (lambda: send_slack(slack_text), lambda: send_mail(subject, mail_body)):
+        try:
+            sender()
+        except Exception as exc:  # noqa: BLE001
+            failures.append(str(exc))
+            print(f"Benachrichtigung fehlgeschlagen: {exc}", file=sys.stderr)
+    return 1 if failures else 0
+
+
 def main() -> int:
     sitemap_url = os.environ.get("SITEMAP_URL")
     if not sitemap_url:
@@ -246,12 +258,20 @@ def main() -> int:
     print(f"geändert: {len(changed)}, neu: {len(added)}, entfernt: {len(removed)}, fehler: {len(errors)}")
 
     if first_run:
-        print("Erster Lauf – Basiszustand gespeichert, keine Benachrichtigung")
-        return 0
+        print("Erster Lauf – Basiszustand gespeichert")
+        if not ALWAYS_NOTIFY:
+            return 0
+        text = f"Website-Monitor eingerichtet für {sitemap_url}: {len(urls)} Seiten als Basiszustand gespeichert.\n"
+        return notify("[Website-Monitor] Eingerichtet", text, text)
 
     if not (changed or added or removed):
         print("Keine Änderungen")
-        return 0
+        if not ALWAYS_NOTIFY:
+            return 0
+        text = f"Keine Änderungen auf {sitemap_url} ({len(results)} Seiten geprüft).\n"
+        if errors:
+            text += f"\nFehler beim Abruf ({len(errors)}):\n" + "\n".join(f"  - {u}: {m}" for u, m in sorted(errors.items())) + "\n"
+        return notify("[Website-Monitor] Keine Änderungen", text, text)
 
     report = build_report(sitemap_url, changed, added, removed, errors, recent)
     mail_body = report + build_diff_text(diffs)
@@ -259,15 +279,7 @@ def main() -> int:
     print(mail_body)
 
     subject = f"[Website-Monitor] {len(changed)} geändert, {len(added)} neu, {len(removed)} entfernt"
-    failures = []
-    for sender in (lambda: send_slack(slack_text), lambda: send_mail(subject, mail_body)):
-        try:
-            sender()
-        except Exception as exc:  # noqa: BLE001
-            failures.append(str(exc))
-            print(f"Benachrichtigung fehlgeschlagen: {exc}", file=sys.stderr)
-
-    return 1 if failures else 0
+    return notify(subject, slack_text, mail_body)
 
 
 if __name__ == "__main__":
