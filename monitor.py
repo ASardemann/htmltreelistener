@@ -17,6 +17,7 @@ from pathlib import Path
 from xml.etree import ElementTree
 
 import requests
+from bs4 import BeautifulSoup
 
 USER_AGENT = "htmltreelistener/1.0 (+github-actions)"
 TIMEOUT = 30
@@ -27,6 +28,8 @@ REPORT_WINDOW_HOURS = int(os.environ.get("REPORT_WINDOW_HOURS", "24"))
 MAX_DIFF_LINES = int(os.environ.get("MAX_DIFF_LINES", "200"))
 SLACK_MAX_CHARS = int(os.environ.get("SLACK_MAX_CHARS", "3500"))
 ALWAYS_NOTIFY = os.environ.get("ALWAYS_NOTIFY", "true").lower() in ("1", "true", "yes")
+# CSS-Selektoren (kommagetrennt) für dynamische Bereiche, die vor dem Vergleich entfernt werden.
+IGNORE_SELECTORS = [s.strip() for s in os.environ.get("IGNORE_SELECTORS", "").split(",") if s.strip()]
 
 session = requests.Session()
 session.headers["User-Agent"] = USER_AGENT
@@ -64,9 +67,19 @@ def sitemap_urls(sitemap_url: str, seen: set[str] | None = None) -> list[str]:
     return locs
 
 
+def strip_ignored(html: str) -> str:
+    if not IGNORE_SELECTORS:
+        return html
+    soup = BeautifulSoup(html, "html.parser")
+    for selector in IGNORE_SELECTORS:
+        for el in soup.select(selector):
+            el.decompose()
+    return str(soup)
+
+
 def normalize_html(html: str) -> str:
     # Whitespace angleichen und jedes Tag auf eine eigene Zeile setzen, damit Diffs lesbar bleiben.
-    html = html.lstrip("\ufeff")
+    html = strip_ignored(html.lstrip("\ufeff"))
     html = re.sub(r"[ \t\r\f\v]+", " ", html)
     html = re.sub(r">\s*<", ">\n<", html)
     return "\n".join(line.strip() for line in html.splitlines() if line.strip())

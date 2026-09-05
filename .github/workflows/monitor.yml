@@ -30,6 +30,7 @@ jobs:
         continue-on-error: true
         env:
           SITEMAP_URL: ${{ vars.SITEMAP_URL }}
+          IGNORE_SELECTORS: ${{ vars.IGNORE_SELECTORS || '.psac-post-slider' }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
