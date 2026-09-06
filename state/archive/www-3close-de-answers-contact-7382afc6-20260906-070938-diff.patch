@@ -1,0 +1,9 @@
+--- vorher
++++ nachher
+@@ -974,5 +974,5 @@
+ </script>
+ <script id="gutena-forms-script-js-extra">
+-var gutenaFormsBlock = {"submit_action":"gutena_forms_submit","ajax_url":"https://www.3close.de/answers/wp-admin/admin-ajax.php","nonce":"dfd41a71e2","grecaptcha_type":"0","grecaptcha_site_key":"","grecaptcha_secret_key":"","pricing_link":"https://gutenaforms.com/pricing/","cloudflare_turnstile":[],"is_pro":"","is_gutena_forms_post_type":"","forms_available":"","required_msg":"Please fill in this field","required_msg_optin":"Please check this checkbox","required_msg_select":"Please select an option","required_msg_check":"Please check an option","invalid_email_msg":"Please enter a valid email address","min_value_msg":"Input value should be greater than","max_value_msg":"Input value should be less than"};
++«dyn»
+ //# sourceURL=gutena-forms-script-js-extra
+ </script>
