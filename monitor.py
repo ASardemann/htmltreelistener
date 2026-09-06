@@ -185,7 +185,8 @@ def archive_change(url: str, change: Change, now: datetime) -> None:
     if change.old_html is None or change.new_html is None:
         return
     ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
-    base = f"{url_slug(url)}-{now.strftime('%Y%m%d-%H%M%S')}"
+    # Kurzer URL-Hash verhindert Kollisionen ähnlicher URLs (z. B. /x-y vs. /x_y) im selben Lauf.
+    base = f"{url_slug(url)}-{hashlib.sha256(url.encode('utf-8')).hexdigest()[:8]}-{now.strftime('%Y%m%d-%H%M%S')}"
     files = {
         "vorher": (ARCHIVE_DIR / f"{base}-vorher.html", change.old_html),
         "nachher": (ARCHIVE_DIR / f"{base}-nachher.html", change.new_html),
@@ -197,11 +198,16 @@ def archive_change(url: str, change: Change, now: datetime) -> None:
 
 
 def prune_archive(now: datetime) -> None:
+    """Löscht Archivdateien, deren Zeitstempel im Dateinamen älter als ARCHIVE_KEEP_DAYS ist."""
     if ARCHIVE_KEEP_DAYS <= 0 or not ARCHIVE_DIR.exists():
         return
-    cutoff = now.timestamp() - ARCHIVE_KEEP_DAYS * 86400
+    cutoff = now - timedelta(days=ARCHIVE_KEEP_DAYS)
     for path in ARCHIVE_DIR.iterdir():
-        if path.is_file() and path.stat().st_mtime < cutoff:
+        match = re.search(r"-(\d{8}-\d{6})-(?:vorher|nachher|diff)\.(?:html|patch)$", path.name)
+        if not match or not path.is_file():
+            continue
+        stamp = datetime.strptime(match.group(1), "%Y%m%d-%H%M%S").replace(tzinfo=timezone.utc)
+        if stamp < cutoff:
             path.unlink()
 
 
