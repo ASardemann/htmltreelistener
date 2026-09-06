@@ -25,6 +25,9 @@ TIMEOUT = 30
 MAX_WORKERS = int(os.environ.get("MAX_WORKERS", "8"))
 STATE_FILE = Path(os.environ.get("STATE_FILE", "state/hashes.json"))
 SNAPSHOT_DIR = STATE_FILE.parent / "snapshots"
+# Archiv: pro erkannter Änderung Vorher-/Nachher-HTML und Diff unter <url-slug>-<datum>-*.html/.patch.
+ARCHIVE_DIR = STATE_FILE.parent / "archive"
+ARCHIVE_KEEP_DAYS = int(os.environ.get("ARCHIVE_KEEP_DAYS", "0"))  # 0 = unbegrenzt
 REPORT_WINDOW_HOURS = int(os.environ.get("REPORT_WINDOW_HOURS", "24"))
 MAX_DIFF_LINES = int(os.environ.get("MAX_DIFF_LINES", "200"))
 # Slack: maximale Zeichen pro Nachricht und maximale Diff-Nachrichten pro Seite.
@@ -33,7 +36,6 @@ SLACK_MAX_CHUNKS = int(os.environ.get("SLACK_MAX_CHUNKS", "5"))
 # Für Links auf die Snapshots im Repository (in GitHub Actions automatisch gesetzt).
 GITHUB_SERVER_URL = os.environ.get("GITHUB_SERVER_URL", "https://github.com")
 GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY")
-GITHUB_SHA = os.environ.get("GITHUB_SHA")
 GITHUB_REF_NAME = os.environ.get("GITHUB_REF_NAME", "main")
 ALWAYS_NOTIFY = os.environ.get("ALWAYS_NOTIFY", "true").lower() in ("1", "true", "yes")
 
@@ -69,6 +71,8 @@ class Change:
     diff: str
     old_html: str | None = None
     new_html: str | None = None
+    # Relative Pfade der archivierten Dateien (vorher, nachher, diff).
+    archive: dict[str, Path] = field(default_factory=dict)
 
 
 def split_selectors(value: str) -> list[str]:
@@ -158,16 +162,47 @@ def make_diff(old: str, new: str) -> str:
     return "\n".join(lines)
 
 
-def snapshot_url(url: str, ref: str) -> str | None:
+def repo_file_url(path: Path) -> str | None:
     if not GITHUB_REPOSITORY:
         return None
-    rel = snapshot_path(url).as_posix()
-    return f"{GITHUB_SERVER_URL}/{GITHUB_REPOSITORY}/blob/{ref}/{rel}"
+    try:
+        rel = path.resolve().relative_to(Path.cwd().resolve())
+    except ValueError:
+        rel = path
+    return f"{GITHUB_SERVER_URL}/{GITHUB_REPOSITORY}/blob/{GITHUB_REF_NAME}/{rel.as_posix()}"
+
+
+def url_slug(url: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", url.split("://", 1)[-1].lower()).strip("-")[:80] or "seite"
 
 
 def attachment_name(url: str, suffix: str) -> str:
-    slug = re.sub(r"[^a-z0-9]+", "-", url.split("://", 1)[-1].lower()).strip("-")[:80] or "seite"
-    return f"{slug}-{suffix}.html"
+    return f"{url_slug(url)}-{suffix}.html"
+
+
+def archive_change(url: str, change: Change, now: datetime) -> None:
+    """Legt Vorher-/Nachher-HTML und Diff einer Änderung dauerhaft im Archiv ab."""
+    if change.old_html is None or change.new_html is None:
+        return
+    ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+    base = f"{url_slug(url)}-{now.strftime('%Y%m%d-%H%M%S')}"
+    files = {
+        "vorher": (ARCHIVE_DIR / f"{base}-vorher.html", change.old_html),
+        "nachher": (ARCHIVE_DIR / f"{base}-nachher.html", change.new_html),
+        "diff": (ARCHIVE_DIR / f"{base}-diff.patch", change.diff + "\n"),
+    }
+    for key, (path, content) in files.items():
+        path.write_text(content, encoding="utf-8")
+        change.archive[key] = path
+
+
+def prune_archive(now: datetime) -> None:
+    if ARCHIVE_KEEP_DAYS <= 0 or not ARCHIVE_DIR.exists():
+        return
+    cutoff = now.timestamp() - ARCHIVE_KEEP_DAYS * 86400
+    for path in ARCHIVE_DIR.iterdir():
+        if path.is_file() and path.stat().st_mtime < cutoff:
+            path.unlink()
 
 
 def check_page(url: str, old_hash: str | None, selectors: list[str]) -> tuple[str, str | None, Change | None, str | None]:
@@ -263,11 +298,7 @@ def build_slack_messages(report: str, changes: dict[str, Change]) -> list[str]:
     for url in sorted(changes):
         change = changes[url]
         header = f"*{slack_escape(url)}*"
-        links = []
-        if change.old_html is not None and GITHUB_SHA and (before := snapshot_url(url, GITHUB_SHA)):
-            links.append(f"<{before}|vorher>")
-        if after := snapshot_url(url, GITHUB_REF_NAME):
-            links.append(f"<{after}|nachher>")
+        links = [f"<{link}|{label}>" for label, path in change.archive.items() if (link := repo_file_url(path))]
         if links:
             header += "  (" + " · ".join(links) + ")"
         if not change.diff:
@@ -367,6 +398,7 @@ def process_site(site: Site, state: dict, now: datetime) -> int:
                 results[url] = digest
                 if change is not None:
                     changes[url] = change
+                    archive_change(url, change, now)
             else:
                 errors[url] = error or "unbekannter Fehler"
 
@@ -443,6 +475,7 @@ def main() -> int:
         entry.setdefault("sitemap", sites[0].sitemap)
 
     now = datetime.now(timezone.utc)
+    prune_archive(now)
     exit_code = 0
     for site in sites:
         exit_code = max(exit_code, process_site(site, state, now))
