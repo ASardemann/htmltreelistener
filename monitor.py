@@ -38,8 +38,9 @@ GITHUB_REF_NAME = os.environ.get("GITHUB_REF_NAME", "main")
 ALWAYS_NOTIFY = os.environ.get("ALWAYS_NOTIFY", "true").lower() in ("1", "true", "yes")
 
 # Regex-Muster für Werte, die sich bei jedem Abruf ändern und durch einen Platzhalter ersetzt werden.
-# Standard: 13-stellige Hex-IDs in Anführungszeichen (WordPress uniqid(), z. B. Lightbox imageId / data-wp-key).
-BUILTIN_PATTERNS = [r"(?<=[\"'])[0-9a-f]{13}(?=[\"'])"]
+# Standard: 13-stellige Hex-IDs in Anführungszeichen (WordPress uniqid(), z. B. Lightbox imageId / data-wp-key)
+# sowie der komplette gutenaFormsBlock (Gutena Forms), dessen Nonce alle 12–24 h rotiert.
+BUILTIN_PATTERNS = [r"(?<=[\"'])[0-9a-f]{13}(?=[\"'])", r"var gutenaFormsBlock = \{.*?\};"]
 IGNORE_PATTERNS = [
     re.compile(p) for p in BUILTIN_PATTERNS + [l.strip() for l in os.environ.get("IGNORE_PATTERNS", "").splitlines() if l.strip()]
 ]
