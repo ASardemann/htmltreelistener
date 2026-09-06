@@ -27,7 +27,7 @@ STATE_FILE = Path(os.environ.get("STATE_FILE", "state/hashes.json"))
 SNAPSHOT_DIR = STATE_FILE.parent / "snapshots"
 # Archiv: pro erkannter Änderung Vorher-/Nachher-HTML und Diff unter <url-slug>-<datum>-*.html/.patch.
 ARCHIVE_DIR = STATE_FILE.parent / "archive"
-ARCHIVE_KEEP_DAYS = int(os.environ.get("ARCHIVE_KEEP_DAYS", "0"))  # 0 = unbegrenzt
+ARCHIVE_KEEP_DAYS = int(os.environ.get("ARCHIVE_KEEP_DAYS", "7"))  # 0 = unbegrenzt
 REPORT_WINDOW_HOURS = int(os.environ.get("REPORT_WINDOW_HOURS", "24"))
 MAX_DIFF_LINES = int(os.environ.get("MAX_DIFF_LINES", "200"))
 # Slack: maximale Zeichen pro Nachricht und maximale Diff-Nachrichten pro Seite.
