@@ -1,0 +1,9 @@
+--- vorher
++++ nachher
+@@ -932,5 +932,5 @@
+ //# sourceURL=google_gtagjs-js-after
+ </script>
+-<meta content="Site Kit by Google 1.186.0" name="generator"/>
++<meta content="Site Kit by Google 1.187.0" name="generator"/>
+ <!-- Smooth Scroll by DarkWolf -->
+ <script src="https://www.3close.de/answers/wp-content/plugins/smooth-page-scroll-to-top/files/smooth_scroll.js" type="text/javascript">

@@ -1,0 +1,64 @@
+--- vorher
++++ nachher
+@@ -53,6 +53,6 @@
+ /*# sourceURL=global-styles-inline-css */
+ </style>
+-<link href="https://www.ideetrifftfarbe.de/wp-content/plugins/complianz-gdpr/assets/css/cookieblocker.min.css?ver=1788233455" id="cmplz-general-css" media="all" rel="stylesheet"/>
+-<link href="https://www.ideetrifftfarbe.de/wp-content/uploads/complianz/css/banner-1-optin.css?ver=1788233491" id="cmplz-banner-1-optin-css" media="all" rel="stylesheet"/>
++<link href="https://www.ideetrifftfarbe.de/wp-content/plugins/complianz-gdpr/assets/css/cookieblocker.min.css?ver=1788920872" id="cmplz-general-css" media="all" rel="stylesheet"/>
++<link href="https://www.ideetrifftfarbe.de/wp-content/uploads/complianz/css/banner-1-optin.css?ver=1788920906" id="cmplz-banner-1-optin-css" media="all" rel="stylesheet"/>
+ <link href="https://www.ideetrifftfarbe.de/wp-content/themes/hitchcock/style.css?ver=2.0.2" id="hitchcock_style-css" media="all" rel="stylesheet"/>
+ <script id="jquery-core-js" src="https://www.ideetrifftfarbe.de/wp-includes/js/jquery/jquery.min.js?ver=3.7.1">
+@@ -89,5 +89,5 @@
+ .modula-best-grid-gallery .is-idle.is-compact .fancybox__footer {animation: none !important}
+ </style>
+-<link href="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/css/front.css?ver=2.14.38" id="modula-css" media="all" rel="stylesheet"/>
++<link href="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/css/front.css?ver=2.14.39" id="modula-css" media="all" rel="stylesheet"/>
+ </head>
+ <body class="wp-singular page-template-default page page-id-1194 wp-theme-hitchcock post single show-preview-titles modula-best-grid-gallery" data-cmplz="1">
+@@ -507,14 +507,14 @@
+ </div>
+ <script id="cmplz-cookiebanner-js-extra">
+-var complianz = {"prefix":"cmplz_","debug":"","user_banner_id":"1","set_cookies":[],"block_ajax_content":"0","banner_version":"76","version":"7.5.4","store_consent":"","do_not_track_enabled":"","consenttype":"optin","region":"eu","geoip":"","dismiss_timeout":"","disable_cookiebanner":"1","soft_cookiewall":"","dismiss_on_scroll":"","cookie_expiry":"365","url":"https://www.ideetrifftfarbe.de/wp-json/complianz/v1/","locale":"lang=de&locale=de_DE","set_cookies_on_root":"0","cookie_domain":"","current_policy_id":"29","cookie_path":"/","categories":{"statistics":"Statistiken","marketing":"Marketing"},"tcf_active":"","placeholdertext":"Bitte hier klicken, um die Marketing-Cookies zu akzeptieren und diesen inhalt zu aktivieren","css_file":"https://www.ideetrifftfarbe.de/wp-content/uploads/complianz/css/banner-{banner_id}-{type}.css?v=76","page_links":{"eu":{"cookie-statement":{"title":"Cookie-Richtlinie ","url":"https://www.ideetrifftfarbe.de/cookies/"},"privacy-statement":{"title":"Datenschutzerkl\u00e4rung","url":"https://www.ideetrifftfarbe.de/datenschutzerklaerung/"},"impressum":{"title":"Impressum","url":"https://www.ideetrifftfarbe.de/impressum/"}},"us":{"impressum":{"title":"Impressum","url":"https://www.ideetrifftfarbe.de/impressum/"}},"uk":{"impressum":{"title":"Impressum","url":"https://www.ideetrifftfarbe.de/impressum/"}},"ca":{"impressum":{"title":"Impressum","url":"https://www.ideetrifftfarbe.de/impressum/"}},"au":{"impressum":{"title":"Impressum","url":"https://www.ideetrifftfarbe.de/impressum/"}},"za":{"impressum":{"title":"Impressum","url":"https://www.ideetrifftfarbe.de/impressum/"}},"br":{"impressum":{"title":"Impressum","url":"https://www.ideetrifftfarbe.de/impressum/"}}},"tm_categories":"","forceEnableStats":"","preview":"","clean_cookies":"","aria_label":"Bitte hier klicken, um die Marketing-Cookies zu akzeptieren und diesen inhalt zu aktivieren","iapi_nav":"fallback"};
++var complianz = {"prefix":"cmplz_","debug":"","user_banner_id":"1","set_cookies":[],"block_ajax_content":"0","banner_version":"76","version":"7.5.5","store_consent":"","do_not_track_enabled":"","consenttype":"optin","region":"eu","geoip":"","dismiss_timeout":"","disable_cookiebanner":"1","soft_cookiewall":"","dismiss_on_scroll":"","cookie_expiry":"365","url":"https://www.ideetrifftfarbe.de/wp-json/complianz/v1/","locale":"lang=de&locale=de_DE","set_cookies_on_root":"0","cookie_domain":"","current_policy_id":"29","cookie_path":"/","categories":{"statistics":"Statistiken","marketing":"Marketing"},"tcf_active":"","placeholdertext":"Bitte hier klicken, um die Marketing-Cookies zu akzeptieren und diesen inhalt zu aktivieren","css_file":"https://www.ideetrifftfarbe.de/wp-content/uploads/complianz/css/banner-{banner_id}-{type}.css?v=76","page_links":{"eu":{"cookie-statement":{"title":"Cookie-Richtlinie ","url":"https://www.ideetrifftfarbe.de/cookies/"},"privacy-statement":{"title":"Datenschutzerkl\u00e4rung","url":"https://www.ideetrifftfarbe.de/datenschutzerklaerung/"},"impressum":{"title":"Impressum","url":"https://www.ideetrifftfarbe.de/impressum/"}},"us":{"impressum":{"title":"Impressum","url":"https://www.ideetrifftfarbe.de/impressum/"}},"uk":{"impressum":{"title":"Impressum","url":"https://www.ideetrifftfarbe.de/impressum/"}},"ca":{"impressum":{"title":"Impressum","url":"https://www.ideetrifftfarbe.de/impressum/"}},"au":{"impressum":{"title":"Impressum","url":"https://www.ideetrifftfarbe.de/impressum/"}},"za":{"impressum":{"title":"Impressum","url":"https://www.ideetrifftfarbe.de/impressum/"}},"br":{"impressum":{"title":"Impressum","url":"https://www.ideetrifftfarbe.de/impressum/"}}},"tm_categories":"","forceEnableStats":"","preview":"","clean_cookies":"","aria_label":"Bitte hier klicken, um die Marketing-Cookies zu akzeptieren und diesen inhalt zu aktivieren","iapi_nav":"fallback"};
+ //# sourceURL=cmplz-cookiebanner-js-extra
+ </script>
+-<script defer="" id="cmplz-cookiebanner-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1788233455">
+-</script>
+-<script id="modula-isotope-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/isotope.min.js?ver=2.14.38">
+-</script>
+-<script id="modula-isotope-packery-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/isotope-packery.min.js?ver=2.14.38">
+-</script>
+-<script id="dompurify-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/purify.min.js?ver=2.14.38">
++<script defer="" id="cmplz-cookiebanner-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1788920872">
++</script>
++<script id="modula-isotope-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/isotope.min.js?ver=2.14.39">
++</script>
++<script id="modula-isotope-packery-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/isotope-packery.min.js?ver=2.14.39">
++</script>
++<script id="dompurify-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/purify.min.js?ver=2.14.39">
+ </script>
+ <script id="modulaFancybox-js-before">
+@@ -544,7 +544,7 @@
+ //# sourceURL=modulaFancybox-js-before
+ </script>
+-<script id="modulaFancybox-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/modula-fancybox.min.js?ver=2.14.38">
+-</script>
+-<script id="modula-fancybox-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/fancybox.min.js?ver=2.14.38">
++<script id="modulaFancybox-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/modula-fancybox.min.js?ver=2.14.39">
++</script>
++<script id="modula-fancybox-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/fancybox.min.js?ver=2.14.39">
+ </script>
+ <script id="modula-js-before">
+@@ -552,5 +552,5 @@
+ //# sourceURL=modula-js-before
+ </script>
+-<script id="modula-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/jquery-modula.min.js?ver=2.14.38">
++<script id="modula-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/jquery-modula.min.js?ver=2.14.39">
+ </script>
+ <script id="wp-emoji-settings" type="application/json">
+@@ -564,3 +564,3 @@
+ </body>
+ </html>
+-<!-- WP Fastest Cache file was created in 1.857 seconds, on 1. September 2026 @ 18:14 -->
++<!-- WP Fastest Cache file was created in 2.466 seconds, on 9. September 2026 @ 4:28 -->
