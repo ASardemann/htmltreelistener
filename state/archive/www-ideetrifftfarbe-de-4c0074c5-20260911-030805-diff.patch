@@ -1,0 +1,201 @@
+--- vorher
++++ nachher
+@@ -89,5 +89,5 @@
+ .modula-best-grid-gallery .is-idle.is-compact .fancybox__footer {animation: none !important}
+ </style>
+-<link href="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/css/front.css?ver=2.14.39" id="modula-css" media="all" rel="stylesheet"/>
++<link href="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/css/front.css?ver=3.0.0" id="modula-css" media="all" rel="stylesheet"/>
+ </head>
+ <body class="home wp-singular page-template-default page page-id-209 wp-theme-hitchcock post single show-preview-titles modula-best-grid-gallery" data-cmplz="1">
+@@ -198,5 +198,5 @@
+ </p>
+ <br/>
+-<div class="modula modula-gallery modula-custom-grid" data-config="{&quot;height&quot;:800,&quot;tabletHeight&quot;:800,&quot;mobileHeight&quot;:800,&quot;desktopHeight&quot;:800,&quot;enableTwitter&quot;:false,&quot;enableWhatsapp&quot;:false,&quot;enableFacebook&quot;:false,&quot;enablePinterest&quot;:false,&quot;enableLinkedin&quot;:false,&quot;enableEmail&quot;:false,&quot;randomFactor&quot;:0,&quot;type&quot;:&quot;custom-grid&quot;,&quot;columns&quot;:12,&quot;gutter&quot;:10,&quot;mobileGutter&quot;:10,&quot;tabletGutter&quot;:10,&quot;desktopGutter&quot;:10,&quot;enableResponsive&quot;:&quot;0&quot;,&quot;tabletColumns&quot;:2,&quot;mobileColumns&quot;:1,&quot;lazyLoad&quot;:0,&quot;lightboxOpts&quot;:{&quot;animated&quot;:true,&quot;Thumbs&quot;:{&quot;type&quot;:&quot;modern&quot;,&quot;showOnStart&quot;:false},&quot;Toolbar&quot;:{&quot;display&quot;:{&quot;right&quot;:[&quot;close&quot;]},&quot;enabled&quot;:true},&quot;Carousel&quot;:{&quot;Panzoom&quot;:{&quot;touch&quot;:true},&quot;infinite&quot;:false},&quot;keyboard&quot;:{&quot;Escape&quot;:&quot;close&quot;,&quot;Delete&quot;:&quot;close&quot;,&quot;Backspace&quot;:&quot;close&quot;,&quot;PageUp&quot;:&quot;next&quot;,&quot;PageDown&quot;:&quot;prev&quot;,&quot;ArrowUp&quot;:&quot;prev&quot;,&quot;ArrowDown&quot;:&quot;next&quot;,&quot;ArrowRight&quot;:&quot;next&quot;,&quot;ArrowLeft&quot;:&quot;prev&quot;},&quot;wheel&quot;:&quot;slide&quot;,&quot;touch&quot;:true,&quot;backdropClick&quot;:&quot;close&quot;,&quot;l10n&quot;:{&quot;CLOSE&quot;:&quot;Schlie\u00dfen&quot;,&quot;NEXT&quot;:&quot;Weiter&quot;,&quot;PREV&quot;:&quot;Zur\u00fcck&quot;,&quot;Error&quot;:&quot;Der angeforderte Inhalt kann nicht geladen werden. Bitte versuche es sp\u00e4ter noch einmal.&quot;,&quot;PLAY_START&quot;:&quot;Slideshow starten&quot;,&quot;PLAY_STOP&quot;:&quot;Slideshow anhalten&quot;,&quot;FULL_SCREEN&quot;:&quot;Vollbild&quot;,&quot;THUMBS&quot;:&quot;Vorschaubilder&quot;,&quot;DOWNLOAD&quot;:&quot;Download&quot;,&quot;SHARE&quot;:&quot;Teilen&quot;,&quot;ZOOM&quot;:&quot;Vergr\u00f6\u00dfern&quot;,&quot;EMAIL&quot;:&quot;Hier ist der Link zum Bild: %%image_link%% und hier ist der Link zur Galerie: %%gallery_link%%&quot;,&quot;MODAL&quot;:&quot;Du kannst diesen Modal-Inhalt mit der ESC-Taste schlie\u00dfen&quot;,&quot;ERROR&quot;:&quot;Es ist ein Fehler aufgetreten. Bitte versuche es sp\u00e4ter noch einmal&quot;,&quot;IMAGE_ERROR&quot;:&quot;Bild nicht gefunden&quot;,&quot;ELEMENT_NOT_FOUND&quot;:&quot;HTML-Element nicht gefunden&quot;,&quot;AJAX_NOT_FOUND&quot;:&quot;Fehler beim Laden von AJAX: Nicht gefunden&quot;,&quot;AJAX_FORBIDDEN&quot;:&quot;Fehler beim Laden von AJAX: Zugriff verweigert&quot;,&quot;IFRAME_ERROR&quot;:&quot;Fehler beim Laden der Seite&quot;,&quot;TOGGLE_ZOOM&quot;:&quot;Zoomstufe umschalten&quot;,&quot;TOGGLE_THUMBS&quot;:&quot;Miniaturansichten ein-\/ausblenden&quot;,&quot;TOGGLE_SLIDESHOW&quot;:&quot;Diashow ein-\/ausschalten&quot;,&quot;TOGGLE_FULLSCREEN&quot;:&quot;Vollbildmodus umschalten&quot;},&quot;Images&quot;:{&quot;Panzoom&quot;:{&quot;maxScale&quot;:2}},&quot;mainClass&quot;:&quot;modula-fancybox-container modula-lightbox-jtg-265&quot;,&quot;Html&quot;:{&quot;videoAutoplay&quot;:0,&quot;videoTpl&quot;:&quot;&lt;video class=\&quot;fancybox__html5video\&quot; controls muted playsinline controlsList controlsList=\&quot;nodownload\&quot; poster=\&quot;{{poster}}\&quot; src=\&quot;{{src}}\&quot; type=\&quot;{{format}}\&quot; &gt; Sorry, your browser doesn't support embedded videos, &lt;a href=\&quot;{{src}}\&quot;&gt; download &lt;\/a&gt; and watch with your favorite video player! &lt;\/video&gt;&quot;}},&quot;inView&quot;:false,&quot;email_subject&quot;:&quot;Check out this awesome image !!&quot;,&quot;email_message&quot;:&quot;Here is the link to the image : %%image_link%% and this is the link to the gallery : %%gallery_link%%&quot;,&quot;lightbox&quot;:&quot;fancybox&quot;,&quot;lightbox_devices&quot;:&quot;both&quot;}" id="jtg-265">
++<div class="modula modula-gallery modula-custom-grid" data-config="{&quot;height&quot;:800,&quot;tabletHeight&quot;:800,&quot;mobileHeight&quot;:800,&quot;desktopHeight&quot;:800,&quot;enableTwitter&quot;:false,&quot;enableWhatsapp&quot;:false,&quot;enableFacebook&quot;:false,&quot;enablePinterest&quot;:false,&quot;enableLinkedin&quot;:false,&quot;enableEmail&quot;:false,&quot;randomFactor&quot;:0,&quot;type&quot;:&quot;custom-grid&quot;,&quot;columns&quot;:12,&quot;gutter&quot;:10,&quot;mobileGutter&quot;:10,&quot;tabletGutter&quot;:10,&quot;desktopGutter&quot;:10,&quot;enableResponsive&quot;:&quot;0&quot;,&quot;tabletColumns&quot;:2,&quot;mobileColumns&quot;:1,&quot;lazyLoad&quot;:0,&quot;lightboxOpts&quot;:{&quot;animated&quot;:true,&quot;Thumbs&quot;:{&quot;type&quot;:&quot;modern&quot;,&quot;showOnStart&quot;:false},&quot;Toolbar&quot;:{&quot;display&quot;:{&quot;right&quot;:[&quot;close&quot;]},&quot;enabled&quot;:true},&quot;Carousel&quot;:{&quot;Panzoom&quot;:{&quot;touch&quot;:true},&quot;infinite&quot;:false},&quot;keyboard&quot;:{&quot;Escape&quot;:&quot;close&quot;,&quot;Delete&quot;:&quot;close&quot;,&quot;Backspace&quot;:&quot;close&quot;,&quot;PageUp&quot;:&quot;next&quot;,&quot;PageDown&quot;:&quot;prev&quot;,&quot;ArrowUp&quot;:&quot;prev&quot;,&quot;ArrowDown&quot;:&quot;next&quot;,&quot;ArrowRight&quot;:&quot;next&quot;,&quot;ArrowLeft&quot;:&quot;prev&quot;},&quot;wheel&quot;:&quot;slide&quot;,&quot;touch&quot;:true,&quot;backdropClick&quot;:&quot;close&quot;,&quot;l10n&quot;:{&quot;CLOSE&quot;:&quot;Schlie\u00dfen&quot;,&quot;NEXT&quot;:&quot;Weiter&quot;,&quot;PREV&quot;:&quot;Zur\u00fcck&quot;,&quot;Error&quot;:&quot;Der angeforderte Inhalt kann nicht geladen werden. Bitte versuche es sp\u00e4ter noch einmal.&quot;,&quot;PLAY_START&quot;:&quot;Slideshow starten&quot;,&quot;PLAY_STOP&quot;:&quot;Slideshow anhalten&quot;,&quot;FULL_SCREEN&quot;:&quot;Vollbild&quot;,&quot;THUMBS&quot;:&quot;Vorschaubilder&quot;,&quot;DOWNLOAD&quot;:&quot;Download&quot;,&quot;SHARE&quot;:&quot;Teilen&quot;,&quot;ZOOM&quot;:&quot;Vergr\u00f6\u00dfern&quot;,&quot;EMAIL&quot;:&quot;Hier ist der Link zum Bild: %%image_link%% und hier ist der Link zur Galerie: %%gallery_link%%&quot;,&quot;MODAL&quot;:&quot;Du kannst diesen Modal-Inhalt mit der ESC-Taste schlie\u00dfen&quot;,&quot;ERROR&quot;:&quot;Es ist ein Fehler aufgetreten. Bitte versuche es sp\u00e4ter noch einmal&quot;,&quot;IMAGE_ERROR&quot;:&quot;Bild nicht gefunden&quot;,&quot;ELEMENT_NOT_FOUND&quot;:&quot;HTML-Element nicht gefunden&quot;,&quot;AJAX_NOT_FOUND&quot;:&quot;Fehler beim Laden von AJAX: Nicht gefunden&quot;,&quot;AJAX_FORBIDDEN&quot;:&quot;Fehler beim Laden von AJAX: Zugriff verweigert&quot;,&quot;IFRAME_ERROR&quot;:&quot;Fehler beim Laden der Seite&quot;,&quot;TOGGLE_ZOOM&quot;:&quot;Zoomstufe umschalten&quot;,&quot;TOGGLE_THUMBS&quot;:&quot;Miniaturansichten ein-\/ausblenden&quot;,&quot;TOGGLE_SLIDESHOW&quot;:&quot;Diashow ein-\/ausschalten&quot;,&quot;TOGGLE_FULLSCREEN&quot;:&quot;Vollbildmodus umschalten&quot;},&quot;Images&quot;:{&quot;Panzoom&quot;:{&quot;maxScale&quot;:2}},&quot;mainClass&quot;:&quot;modula-fancybox-container modula-lightbox-modula-265&quot;,&quot;Html&quot;:{&quot;videoAutoplay&quot;:0,&quot;videoTpl&quot;:&quot;&lt;video class=\&quot;fancybox__html5video\&quot; controls muted playsinline controlsList controlsList=\&quot;nodownload\&quot; poster=\&quot;{{poster}}\&quot; src=\&quot;{{src}}\&quot; type=\&quot;{{format}}\&quot; &gt; Sorry, your browser doesn't support embedded videos, &lt;a href=\&quot;{{src}}\&quot;&gt; download &lt;\/a&gt; and watch with your favorite video player! &lt;\/video&gt;&quot;}},&quot;inView&quot;:false,&quot;email_subject&quot;:&quot;Check out this awesome image !!&quot;,&quot;email_message&quot;:&quot;Here is the link to the image : %%image_link%% and this is the link to the gallery : %%gallery_link%%&quot;,&quot;lightbox&quot;:&quot;fancybox&quot;,&quot;lightbox_devices&quot;:&quot;both&quot;}" id="modula-265">
+ <div class="modula-items">
+ <div class="modula-item effect-pufrobo" data-height="6" data-width="12">
+@@ -204,187 +204,187 @@
+ </div>
+ <div class="modula-item-content">
+-<a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Durchblick • 2017 • Acryl auf Leinwand • 80 x 60 cm" data-image-id="981" rel="jtg-265" role="button" tabindex="0">
+-</a>
+-<img alt="" class="pic wp-image-981" crop="1" data-caption="Durchblick • 2017 • Acryl auf Leinwand • 80 x 60 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220205_112201.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220205_112201.jpg" data-valign="middle" decoding="async" height="1710" sizes="(max-width: 2282px) 100vw, 2282px" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220205_112201.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220205_112201.jpg 2282w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220205_112201-300x225.jpg 300w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220205_112201-1024x767.jpg 1024w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220205_112201-768x575.jpg 768w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220205_112201-1536x1151.jpg 1536w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220205_112201-2048x1535.jpg 2048w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220205_112201-1240x929.jpg 1240w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220205_112201-508x381.jpg 508w" title="" width="2282"/>
+-<div class="figc no-title">
+-<div class="figc-inner">
+-</div>
+-</div>
+-</div>
+-</div>
+-<div class="modula-item effect-pufrobo" data-height="4" data-width="4">
+-<div class="modula-item-overlay">
+-</div>
+-<div class="modula-item-content">
+-<a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Blickfang im Grünen • 2020 • Acryl auf Leinwand • 40 x 30 cm" data-image-id="141" rel="jtg-265" role="button" tabindex="0">
+-</a>
+-<img alt="" class="pic wp-image-141" crop="1" data-caption="Blickfang im Grünen • 2020 • Acryl auf Leinwand • 40 x 30 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210603_183727.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210603_183727-scaled-800x800_c.jpg" data-valign="middle" decoding="async" height="800" sizes="(max-width: 800px) 100vw, 800px" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210603_183727-scaled-800x800_c.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210603_183727-150x150.jpg 150w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210603_183727-scaled-800x800_c.jpg 800w" title="" width="800"/>
+-<div class="figc no-title">
+-<div class="figc-inner">
+-</div>
+-</div>
+-</div>
+-</div>
+-<div class="modula-item effect-pufrobo" data-height="4" data-width="4">
+-<div class="modula-item-overlay">
+-</div>
+-<div class="modula-item-content">
+-<a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Frühling im Haus • 2020 • Acryl auf Leinwand • 40 x 30 cm" data-image-id="1505" rel="jtg-265" role="button" tabindex="0">
+-</a>
+-<img alt="" class="pic wp-image-1505" crop="1" data-caption="Frühling im Haus • 2020 • Acryl auf Leinwand • 40 x 30 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/08/PXL_20250824_150135162.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/08/PXL_20250824_150135162-scaled-800x800_c.jpg" data-valign="middle" decoding="async" height="800" loading="lazy" sizes="auto, (max-width: 800px) 100vw, 800px" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/08/PXL_20250824_150135162-scaled-800x800_c.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/08/PXL_20250824_150135162-150x150.jpg 150w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/08/PXL_20250824_150135162-scaled-800x800_c.jpg 800w" title="" width="800"/>
+-<div class="figc no-title">
+-<div class="figc-inner">
+-</div>
+-</div>
+-</div>
+-</div>
+-<div class="modula-item effect-pufrobo" data-height="4" data-width="4">
+-<div class="modula-item-overlay">
+-</div>
+-<div class="modula-item-content">
+-<a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Entfaltung • 2020 • Acryl auf Leinwand • 40 x 30 cm" data-image-id="1543" rel="jtg-265" role="button" tabindex="0">
+-</a>
+-<img alt="" class="pic wp-image-1543" crop="1" data-caption="Entfaltung • 2020 • Acryl auf Leinwand • 40 x 30 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250920_072855871.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250920_072855871-scaled-800x800_c.jpg" data-valign="middle" decoding="async" height="800" loading="lazy" sizes="auto, (max-width: 800px) 100vw, 800px" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250920_072855871-scaled-800x800_c.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250920_072855871-150x150.jpg 150w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250920_072855871-scaled-800x800_c.jpg 800w" title="" width="800"/>
+-<div class="figc no-title">
+-<div class="figc-inner">
+-</div>
+-</div>
+-</div>
+-</div>
+-<div class="modula-item effect-pufrobo" data-height="4" data-width="4">
+-<div class="modula-item-overlay">
+-</div>
+-<div class="modula-item-content">
+-<a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Leseblüte • 2011 • Arbeitsheft, Wellpappe • 40 x 30 cm" data-image-id="375" rel="jtg-265" role="button" tabindex="0">
+-</a>
+-<img alt="" class="pic wp-image-375" crop="1" data-caption="Leseblüte • 2011 • Arbeitsheft, Wellpappe • 40 x 30 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210617_091308.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210617_091308-800x800_c.jpg" data-valign="middle" decoding="async" height="800" loading="lazy" sizes="auto, (max-width: 800px) 100vw, 800px" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210617_091308-800x800_c.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210617_091308-150x150.jpg 150w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210617_091308-800x800_c.jpg 800w" title="" width="800"/>
+-<div class="figc no-title">
+-<div class="figc-inner">
+-</div>
+-</div>
+-</div>
+-</div>
+-<div class="modula-item effect-pufrobo" data-height="4" data-width="4">
+-<div class="modula-item-overlay">
+-</div>
+-<div class="modula-item-content">
+-<a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Auf Besuch warten • 2019 • Acryl auf Fotokarton • 50 x 50 cm" data-image-id="138" rel="jtg-265" role="button" tabindex="0">
+-</a>
+-<img alt="" class="pic wp-image-138" crop="1" data-caption="Auf Besuch warten • 2019 • Acryl auf Fotokarton • 50 x 50 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_130911.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_130911-800x800_c.jpg" data-valign="middle" decoding="async" height="800" loading="lazy" sizes="auto, (max-width: 800px) 100vw, 800px" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_130911-800x800_c.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_130911-150x150.jpg 150w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_130911-800x800_c.jpg 800w" title="" width="800"/>
+-<div class="figc no-title">
+-<div class="figc-inner">
+-</div>
+-</div>
+-</div>
+-</div>
+-<div class="modula-item effect-pufrobo" data-height="4" data-width="4">
+-<div class="modula-item-overlay">
+-</div>
+-<div class="modula-item-content">
+-<a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Naturstreifen 1 • 2011 • bemaltes Papier auf Fotokarton • 70 x 50 cm" data-image-id="374" rel="jtg-265" role="button" tabindex="0">
+-</a>
+-<img alt="" class="pic wp-image-374" crop="1" data-caption="Naturstreifen 1 • 2011 • bemaltes Papier auf Fotokarton • 70 x 50 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210617_103326.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210617_103326-scaled-800x800_c.jpg" data-valign="middle" decoding="async" height="800" loading="lazy" sizes="auto, (max-width: 800px) 100vw, 800px" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210617_103326-scaled-800x800_c.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210617_103326-150x150.jpg 150w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210617_103326-scaled-800x800_c.jpg 800w" title="" width="800"/>
+-<div class="figc no-title">
+-<div class="figc-inner">
+-</div>
+-</div>
+-</div>
+-</div>
+-<div class="modula-item effect-pufrobo" data-height="4" data-width="4">
+-<div class="modula-item-overlay">
+-</div>
+-<div class="modula-item-content">
+-<a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Bunte Kieselsteine, stehend • 2022 • Acryl auf Malkarton • 20 x 20 cm" data-image-id="985" rel="jtg-265" role="button" tabindex="0">
+-</a>
+-<img alt="" class="pic wp-image-985" crop="1" data-caption="Bunte Kieselsteine, stehend • 2022 • Acryl auf Malkarton • 20 x 20 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155606.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155606-800x800_c.jpg" data-valign="middle" decoding="async" height="800" loading="lazy" sizes="auto, (max-width: 800px) 100vw, 800px" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155606-800x800_c.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155606.jpg 1671w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155606-300x300.jpg 300w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155606-150x150.jpg 150w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155606-768x767.jpg 768w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155606-1240x1238.jpg 1240w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155606-508x507.jpg 508w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155606-800x800_c.jpg 800w" title="" width="800"/>
+-<div class="figc no-title">
+-<div class="figc-inner">
+-</div>
+-</div>
+-</div>
+-</div>
+-<div class="modula-item effect-pufrobo" data-height="4" data-width="4">
+-<div class="modula-item-overlay">
+-</div>
+-<div class="modula-item-content">
+-<a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Pastellfarbene Kieselsteine, schwebend • 2022 • Acryl auf Malkarton • 20 x 20 cm" data-image-id="986" rel="jtg-265" role="button" tabindex="0">
+-</a>
+-<img alt="" class="pic wp-image-986" crop="1" data-caption="Pastellfarbene Kieselsteine, schwebend • 2022 • Acryl auf Malkarton • 20 x 20 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155424.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155424-800x800_c.jpg" data-valign="middle" decoding="async" height="800" loading="lazy" sizes="auto, (max-width: 800px) 100vw, 800px" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155424-800x800_c.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155424-150x150.jpg 150w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155424-800x800_c.jpg 800w" title="" width="800"/>
+-<div class="figc no-title">
+-<div class="figc-inner">
+-</div>
+-</div>
+-</div>
+-</div>
+-<div class="modula-item effect-pufrobo" data-height="4" data-width="4">
+-<div class="modula-item-overlay">
+-</div>
+-<div class="modula-item-content">
+-<a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Graue und schwarze Kieselsteine, liegend • 2022 • Acryl auf Malkarton • 20 x 20 cm" data-image-id="987" rel="jtg-265" role="button" tabindex="0">
+-</a>
+-<img alt="" class="pic wp-image-987" crop="1" data-caption="Graue und schwarze Kieselsteine, liegend • 2022 • Acryl auf Malkarton • 20 x 20 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155337.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155337-800x800_c.jpg" data-valign="middle" decoding="async" height="800" loading="lazy" sizes="auto, (max-width: 800px) 100vw, 800px" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155337-800x800_c.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155337-150x150.jpg 150w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220210_155337-800x800_c.jpg 800w" title="" width="800"/>
+-<div class="figc no-title">
+-<div class="figc-inner">
+-</div>
+-</div>
+-</div>
+-</div>
+-<div class="modula-item effect-pufrobo" data-height="4" data-width="4">
+-<div class="modula-item-overlay">
+-</div>
+-<div class="modula-item-content">
+-<a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Schneeregen vor der Haustür • 2024 • Acryl auf Leinwand • 50 x 50 cm" data-image-id="1537" rel="jtg-265" role="button" tabindex="0">
+-</a>
+-<img alt="" class="pic wp-image-1537" crop="1" data-caption="Schneeregen vor der Haustür • 2024 • Acryl auf Leinwand • 50 x 50 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250915_150006193.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250915_150006193-scaled-800x800_c.jpg" data-valign="middle" decoding="async" height="800" loading="lazy" sizes="auto, (max-width: 800px) 100vw, 800px" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250915_150006193-scaled-800x800_c.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250915_150006193-scaled.jpg 2560w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250915_150006193-300x300.jpg 300w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250915_150006193-1024x1024.jpg 1024w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250915_150006193-150x150.jpg 150w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250915_150006193-768x767.jpg 768w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250915_150006193-1536x1534.jpg 1536w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250915_150006193-2048x2046.jpg 2048w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250915_150006193-1240x1239.jpg 1240w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250915_150006193-508x507.jpg 508w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250915_150006193-scaled-800x800_c.jpg 800w" title="" width="800"/>
+-<div class="figc no-title">
+-<div class="figc-inner">
+-</div>
+-</div>
+-</div>
+-</div>
+-<div class="modula-item effect-pufrobo" data-height="4" data-width="4">
+-<div class="modula-item-overlay">
+-</div>
+-<div class="modula-item-content">
+-<a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Naturstreifen 2 • 2005 • Wasserfarbe auf Malpapier • 40 x 30 cm" data-image-id="376" rel="jtg-265" role="button" tabindex="0">
+-</a>
+-<img alt="" class="pic wp-image-376" crop="1" data-caption="Naturstreifen 2 • 2005 • Wasserfarbe auf Malpapier • 40 x 30 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210617_095145.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210617_095145-scaled-800x800_c.jpg" data-valign="middle" decoding="async" height="800" loading="lazy" sizes="auto, (max-width: 800px) 100vw, 800px" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210617_095145-scaled-800x800_c.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210617_095145-150x150.jpg 150w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210617_095145-scaled-800x800_c.jpg 800w" title="" width="800"/>
+-<div class="figc no-title">
+-<div class="figc-inner">
+-</div>
+-</div>
+-</div>
+-</div>
+-<div class="modula-item effect-pufrobo" data-height="4" data-width="4">
+-<div class="modula-item-overlay">
+-</div>
+-<div class="modula-item-content">
+-<a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Zwischenblick im Wald • 2022 • Acryl auf Fotokarton • 50 x 50 cm" data-image-id="992" rel="jtg-265" role="button" tabindex="0">
+-</a>
+-<img alt="" class="pic wp-image-992" crop="1" data-caption="Zwischenblick im Wald • 2022 • Acryl auf Fotokarton • 50 x 50 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220207_085623.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220207_085623-800x800_c.jpg" data-valign="middle" decoding="async" height="800" loading="lazy" sizes="auto, (max-width: 800px) 100vw, 800px" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220207_085623-800x800_c.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220207_085623-150x150.jpg 150w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220207_085623-800x800_c.jpg 800w" title="" width="800"/>
+-<div class="figc no-title">
+-<div class="figc-inner">
+-</div>
+-</div>
+-</div>
+-</div>
+-<div class="modula-item effect-pufrobo" data-height="4" data-width="4">
+-<div class="modula-item-overlay">
+-</div>
+-<div class="modula-item-content">
+-<a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Lavendelduft und Wolfsmilch • 2025 • Acryl auf Leinwand • 30 x 40 cm" data-image-id="1475" rel="jtg-265" role="button" tabindex="0">
+-</a>
+-<img alt="" class="pic wp-image-1475" crop="1" data-caption="Lavendelduft und Wolfsmilch • 2025 • Acryl auf Leinwand • 30 x 40 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/08/PXL_20250823_172157863.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/08/PXL_20250823_172157863-scaled-800x800_c.jpg" data-valign="middle" decoding="async" height="800" loading="lazy" sizes="auto, (max-width: 800px) 100vw, 800px" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/08/PXL_20250823_172157863-scaled-800x800_c.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/08/PXL_20250823_172157863-150x150.jpg 150w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/08/PXL_20250823_172157863-scaled-800x800_c.jpg 800w" title="" width="800"/>
+-<div class="figc no-title">
+-<div class="figc-inner">
+-</div>
+-</div>
+-</div>
+-</div>
+-<div class="modula-item effect-pufrobo" data-height="4" data-width="4">
+-<div class="modula-item-overlay">
+-</div>
+... (459 weitere Zeilen gekürzt)
