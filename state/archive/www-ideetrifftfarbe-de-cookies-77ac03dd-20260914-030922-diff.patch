@@ -1,0 +1,24 @@
+--- vorher
++++ nachher
+@@ -85,4 +85,16 @@
+ .modula-best-grid-gallery .fancybox-image {padding-bottom: 2rem !important}
+ .modula-best-grid-gallery .is-idle.is-compact .fancybox__footer {animation: none !important}
++.modula-gallery .modula-item,
++.modula-gallery .modula-item-content,
++.modula-gallery .modula-item-overlay,
++.modula-gallery .figc {
++background: transparent !important;
++}
++html body .modula .modula-items .modula-item img.pic { transition: none !important; transform: none !important; }
++@media (min-width: 1025px) {
++.post-inner:has(.modula-gallery) {
++min-height: 930px; /* reale Gesamthöhe der post-inner mit Galerie */
++}
++}
+ </style>
+ </head>
+@@ -633,3 +645,3 @@
+ </body>
+ </html>
+-<!-- WP Fastest Cache file was created in 0.926 seconds, on 12. September 2026 @ 14:57 -->
++<!-- WP Fastest Cache file was created in 1.524 seconds, on 13. September 2026 @ 10:00 -->
