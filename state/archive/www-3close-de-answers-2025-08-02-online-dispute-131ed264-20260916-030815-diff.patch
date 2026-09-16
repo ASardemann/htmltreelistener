@@ -1,0 +1,9 @@
+--- vorher
++++ nachher
+@@ -66,5 +66,5 @@
+ <link as="script" crossorigin="" fetchpriority="low" href="https://www.3close.de/wp-content/plugins/preloader-plus//assets/js/preloader-plus.min.js" rel="preload" type="text/javascript"/>
+ <link as="style" crossorigin="" fetchpriority="low" href="https://www.3close.de/wp-content/plugins/preloader-plus/assets/css/preloader-plus.min.css" rel="preload" type="text/css"/>
+-<!-- This site is optimized with the Yoast SEO plugin v28.4 - https://yoast.com/product/yoast-seo-wordpress/ -->
++<!-- This site is optimized with the Yoast SEO plugin v28.5 - https://yoast.com/product/yoast-seo-wordpress/ -->
+ <meta content="The EU is discontinuing its Online Dispute Resolution (ODR) platform. Here are a few key insights for businesses and website operators." name="description"/>
+ <link href="https://www.3close.de/answers/2025/08/02/online-dispute/" rel="canonical"/>

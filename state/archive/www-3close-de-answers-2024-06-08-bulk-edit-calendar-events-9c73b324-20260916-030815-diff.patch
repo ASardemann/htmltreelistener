@@ -1,0 +1,9 @@
+--- vorher
++++ nachher
+@@ -66,5 +66,5 @@
+ <link as="script" crossorigin="" fetchpriority="low" href="https://www.3close.de/wp-content/plugins/preloader-plus//assets/js/preloader-plus.min.js" rel="preload" type="text/javascript"/>
+ <link as="style" crossorigin="" fetchpriority="low" href="https://www.3close.de/wp-content/plugins/preloader-plus/assets/css/preloader-plus.min.css" rel="preload" type="text/css"/>
+-<!-- This site is optimized with the Yoast SEO plugin v28.4 - https://yoast.com/product/yoast-seo-wordpress/ -->
++<!-- This site is optimized with the Yoast SEO plugin v28.5 - https://yoast.com/product/yoast-seo-wordpress/ -->
+ <meta content="This is a handy utility that helps you to bulk edit calendar events which were imported accidentally." name="description"/>
+ <link href="https://www.3close.de/answers/2024/06/08/bulk-edit-calendar-events/" rel="canonical"/>
