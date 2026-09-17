@@ -1,0 +1,69 @@
+--- vorher
++++ nachher
+@@ -101,5 +101,5 @@
+ }
+ </style>
+-<link href="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/css/front.css?ver=3.0.1" id="modula-css" media="all" rel="stylesheet"/>
++<link href="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/css/front.css?ver=3.0.2" id="modula-css" media="all" rel="stylesheet"/>
+ </head>
+ <body class="wp-singular page-template-default page page-id-379 wp-theme-hitchcock post single show-preview-titles modula-best-grid-gallery" data-cmplz="1">
+@@ -210,8 +210,8 @@
+ <a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="" data-image-id="223" rel="modula-416" role="button" tabindex="0">
+ </a>
+-<img alt="" class="pic wp-image-223" crop="" data-caption="" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947-220x300.jpg" data-valign="middle" decoding="async" fetchpriority="high" height="300" sizes="(max-width: 600px) 25vw, (max-width: 1024px) 25vw, 25vw" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947-220x300.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947.jpg 1437w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947-220x300.jpg 220w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947-752x1024.jpg 752w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947-768x1046.jpg 768w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947-1128x1536.jpg 1128w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947-1240x1689.jpg 1240w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947-508x692.jpg 508w" title="" width="220"/>
++<img alt="" class="pic wp-image-223" crop="" data-caption="" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947-220x300.jpg" data-valign="middle" decoding="async" fetchpriority="high" height="300" sizes="(max-width: 600px) 50vw, (max-width: 1024px) 50vw, 50vw" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947-220x300.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947.jpg 1437w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947-220x300.jpg 220w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947-752x1024.jpg 752w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947-768x1046.jpg 768w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947-1128x1536.jpg 1128w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947-1240x1689.jpg 1240w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20210604_180947-508x692.jpg 508w" title="" width="220"/>
+ <div class="figc no-title no-description">
+ <div class="figc-inner">
+-<div class="modula-title">
++<div class="modula-title jtg-title">
+ </div>
+ </div>
+@@ -225,8 +225,8 @@
+ <a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="" data-image-id="413" rel="modula-416" role="button" tabindex="0">
+ </a>
+-<img alt="" class="pic wp-image-413" crop="" data-caption="" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-220x300.jpg" data-valign="middle" decoding="async" height="300" sizes="(max-width: 600px) 25vw, (max-width: 1024px) 25vw, 25vw" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-220x300.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-scaled.jpg 1879w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-scaled-220x300.jpg 220w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-752x1024.jpg 752w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-768x1046.jpg 768w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-1128x1536.jpg 1128w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-1504x2048.jpg 1504w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-1240x1689.jpg 1240w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-508x692.jpg 508w" title="" width="220"/>
++<img alt="" class="pic wp-image-413" crop="" data-caption="" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-220x300.jpg" data-valign="middle" decoding="async" height="300" sizes="(max-width: 600px) 50vw, (max-width: 1024px) 50vw, 50vw" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-220x300.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-scaled.jpg 1879w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-scaled-220x300.jpg 220w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-752x1024.jpg 752w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-768x1046.jpg 768w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-1128x1536.jpg 1128w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-1504x2048.jpg 1504w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-1240x1689.jpg 1240w, https://www.ideetrifftfarbe.de/wp-content/uploads/2021/06/IMG_20200521_202134-508x692.jpg 508w" title="" width="220"/>
+ <div class="figc no-title no-description">
+ <div class="figc-inner">
+-<div class="modula-title">
++<div class="modula-title jtg-title">
+ </div>
+ </div>
+@@ -448,9 +448,9 @@
+ <script defer="" id="cmplz-cookiebanner-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1788920872">
+ </script>
+-<script id="modula-isotope-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/isotope.min.js?ver=3.0.1">
+-</script>
+-<script id="modula-isotope-packery-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/isotope-packery.min.js?ver=3.0.1">
+-</script>
+-<script id="dompurify-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/purify.min.js?ver=3.0.1">
++<script id="modula-isotope-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/isotope.min.js?ver=3.0.2">
++</script>
++<script id="modula-isotope-packery-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/isotope-packery.min.js?ver=3.0.2">
++</script>
++<script id="dompurify-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/purify.min.js?ver=3.0.2">
+ </script>
+ <script id="modulaFancybox-js-before">
+@@ -480,7 +480,7 @@
+ //# sourceURL=modulaFancybox-js-before
+ </script>
+-<script id="modulaFancybox-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/modula-fancybox.min.js?ver=3.0.1">
+-</script>
+-<script id="modula-fancybox-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/fancybox.min.js?ver=3.0.1">
++<script id="modulaFancybox-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/modula-fancybox.min.js?ver=3.0.2">
++</script>
++<script id="modula-fancybox-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/fancybox.min.js?ver=3.0.2">
+ </script>
+ <script id="modula-js-before">
+@@ -488,5 +488,5 @@
+ //# sourceURL=modula-js-before
+ </script>
+-<script id="modula-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/jquery-modula.min.js?ver=3.0.1">
++<script id="modula-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/jquery-modula.min.js?ver=3.0.2">
+ </script>
+ <script id="wp-emoji-settings" type="application/json">
+@@ -500,3 +500,3 @@
+ </body>
+ </html>
+-<!-- WP Fastest Cache file was created in 1.412 seconds, on 14. September 2026 @ 17:35 -->
++<!-- WP Fastest Cache file was created in 0.861 seconds, on 16. September 2026 @ 18:35 -->
