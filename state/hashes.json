@@ -1,236 +1,236 @@
 {
   "https://www.3close.de/": {
-    "hash": "e5271648707724dbc81f914f70764cdde824330a22bd57d2706c323eba7c560f",
-    "last_changed": "2026-09-09T03:08:34+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "5c2a13ed76612b93a0304f5b67970b344a7a15df941ac5eaa80d0cafe8002433",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2023/11/18/some-browsers-render-different/": {
-    "hash": "f92f455321f4016ecc21079c13cdba1bef603a87e8777bb12afbf83ff3c6743f",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "1be7162585ddc3811607faaff111f23824a5eae23c8e40dd2383e4e7cc5468f7",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2023/11/23/aspect-ratio-media-query/": {
-    "hash": "f274ac9e1ab064a5cd98371a2660cb2a40ea7eb6457a90940ff6501a33da5b94",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "6d45f94bb9d2feb7e9a45d820fec6c7f1c90628e35dea7701721fc91f1b4d5f4",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2023/11/26/make-footer-lines-static-in-wordpress/": {
-    "hash": "e8b5a64df10defb7efe070eb3809164c3b15dc37857693a6ec5c1e232d6e8f97",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "df5b50e62f801e1dcbf0e4bb5af7563d2b593af5dd53ca16d298ba99cf30d935",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2023/11/26/screen-orientation-reloaded/": {
-    "hash": "eace18a6a8b51d0772ed2f111ee3dd6f4c2c1500f7b12ec2f5fe91894df10749",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "fcf20742fe82784b1e82e3c8fc84e5fd3e53005c8bd11f2ff3291d20b551ea11",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2023/12/04/adding-a-gradient-as-background-in-wordpress/": {
-    "hash": "a91ab8bca3385156bea16797f053401d06078e446f982fa9597c07175599f8d9",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "6b906ec486cc618d2c659635517e320348dbd2d78dbc97583fcea2632c7ea503",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2023/12/05/losing-focus/": {
-    "hash": "b3c485f0094d4d43b232aabb5bc99a2ae1d7e7dadd3e6bfd981872e90a673afb",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "2554c1b76041a6cf59dd3a7ab9f7f972308536fb3d99aeb21c44cfb90780d1bc",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2023/12/19/merry-christmas-everybody/": {
-    "hash": "cd5472f3e3c6ca8ab5fb176229af149c4345d597fb8e35f0ac8cf424c57b4eb9",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "6a08e6ce92693c688023aeec4c9d0222ab5e8ab20f9316af986916c066e33abf",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2024/01/24/light-and-dark-vs-black-and-white/": {
-    "hash": "cf2602d4d781cb7bf4e54d327ee6bb9ab55c8d91e8ffc97c6ad811eeea14c1f9",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "d6f0261559d9458f8e4631b589e9bec593f7b7598216b7e508e923f90669f01c",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2024/02/25/release-note/": {
-    "hash": "3eba12a9d40a7f8133119d0957460b36a22df024df8a110a3b50ea10c3a30103",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "23da156413295734d784407f4576dc4f084972251f19ae347ca3c69676efecf6",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2024/06/08/bulk-edit-calendar-events/": {
-    "hash": "13b5f4bdae58027582581d542b823c9c74dc8fc7d161226f37400d257384cc55",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "8f3833fec7f1e996ebb38f90268e0e6df278738ac810207ee039bc860f0a6b98",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2024/08/25/obsolescence-childish/": {
-    "hash": "2ae99f006814590431312aac74be838a9587bf8e89a77fc539ed7c56516bf772",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "8531071389a80bbed24b6c4fe2e9863af4a87292346141720a33db4965f14f42",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2024/10/05/just-like-a-rolling-stone/": {
-    "hash": "52378775fe9a77772ff04a19dca3ccb738f4f3e1284660926053cee4503ae889",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "ea91a5e5c50e08d2eb04167ee903cbfa1df1f5d1d3163f6912734e683179778c",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2024/11/12/with-love/": {
-    "hash": "692457618dbf36dfd0aa6fa86802a48e74ede1d6bdc0fb5b46787d92d0ccbab4",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "5251854b71ee729ac35115c693686a371dbc21bed970a73ed627e2e6ec468dd4",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2025/03/30/marking-clicked-links-as-visited/": {
-    "hash": "450c9ba1d68dbfcf3b1a151d50dabf5c8677fce8a0445029e7b23ad176b2c071",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "47d912463862dc3582f094cff3db9a917d57a2b33335f8f19917ad13d928ff21",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2025/08/02/online-dispute/": {
-    "hash": "cf1d2bedb72c4fb16c304545a4bc044a37813b8c14cd76473e6d100207651acc",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "939b5411abfd44af1595f07c44e022a6e99891d248ba71c26ab8b191347a1a15",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2025/09/27/every-language-has-an-image/": {
-    "hash": "b7c6f6d5f8cefea8c78f4748583cc090f153e75d4751c5ba7047b4cb99c798f7",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "603b81be4ff66e40395dd0eb05b7e0f9326911e1e8acd9c1e0dd8caf3f6ec0de",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2026/01/31/a-fresh-start-into-2026-small-utilities-with-a-big-impact/": {
-    "hash": "e4e49346d5e228052afd879e929275adbd146c63bde870e09448d859f7e27800",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "3fcca5b635a8df5d44685fa574de6037f16906fd62d2333e7fedcd1ddc062569",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2026/04/12/be-crazy-vs-get-crazy/": {
-    "hash": "f6fba5281bc2f451e4c637c798146c5adba79e8043050f4c15965124b32e4e99",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "6e38f3952e1843965e1d934938eb0a22b2d305c853746bc036cb7ab688bba39e",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2026/07/19/the-biggest-tech-company/": {
-    "hash": "d40f3e2fabdce8cc6fb0223d0b2095b1c91d1ccd1dec52463aa4ded996e00766",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "5d161fb8e3689d83d6c8e5fba583d710ea3a34424abe663f14455588473a1006",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/2026/08/14/tech-or-teach/": {
-    "hash": "fc151cf082dcebafd9f4ad9a9d435f88f4c8a44905bab1c529ba6a01eb92ded2",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "768286f0659bdb98f3a9f69db06fd4bdf2516e539c859132a4060a10d5b14003",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/agency/": {
-    "hash": "c132ac924a3f2ec015281264d13cb084a0ef4a78ade14f0a5ce7ad07b43c2150",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "d02ab83a2d9ec6319c75a0abc1e423fd32183fd8cccaf65a8a7887c339f644a2",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/contact/": {
-    "hash": "8b3e172cf95bf2630adb371627fbfa9d27d28add41d1136c9e96af2a8bb1fbb0",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "7338cef7b9f247c880e613fff3359239c82ba656a8216cdf3c1132db662236c9",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/legal-notice/": {
-    "hash": "3a964818c07fd97ec79927edb3fb4b6200a6135a8eb7eb9828fe0af93cce40b5",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "35e9b89a318cac1cb5398b9a9e784310cd2a249dbfe82cbd6305aedfdfa79b53",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/privacy/": {
-    "hash": "79ec7063569ec6f480b5efe99ae0f82d28a70e0a27ccac13a6e5e509e68d01ff",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "abb27ed89cf1ce88055ae98bc5c866bb8f04ddb4051af346de079c726c72d06f",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/projects/": {
-    "hash": "1a095e169e0aa1fed128adf3c51d79b5bd1ac12a2a04e4aa69542f71fc5c572f",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "6a662b8a49aaefc61f228c7a27517b5e15efd38b9bf2db7bf353a2d0d28f8907",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/answers/questions/": {
-    "hash": "ed7b0234e426acd0163d9ae4869b2c0cc4ccac5af4928d1f35ef9daf35e6c570",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "c821e5162530da7a94f386e5393e409179fb8e06c7c81872f68afa41bed3adb8",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.3close.de/privacy-policy/": {
-    "hash": "79ec7063569ec6f480b5efe99ae0f82d28a70e0a27ccac13a6e5e509e68d01ff",
-    "last_changed": "2026-09-16T03:08:15+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "abb27ed89cf1ce88055ae98bc5c866bb8f04ddb4051af346de079c726c72d06f",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.3close.de/sitemap.xml"
   },
   "https://www.ideetrifftfarbe.de/": {
-    "hash": "c8b32b41b7303f8878bcd8de9e33678310e74b0050248194a520d31bdcf3eac6",
-    "last_changed": "2026-09-17T03:08:27+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "d0ff6568c4fd59d69abee0e93161033e0e189c4dfc9dc755fefed2e275ee574f",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.ideetrifftfarbe.de/sitemap.xml"
   },
   "https://www.ideetrifftfarbe.de/alltag/": {
-    "hash": "6a1ed6cbb4406159a1bcbd65bda4dfb08a1d491577e6121cd864c60be316abb0",
-    "last_changed": "2026-09-17T03:08:27+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "9fbafe4d625172445c464635c62bde34e074ae05c57be526347e59348771a975",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.ideetrifftfarbe.de/sitemap.xml"
   },
   "https://www.ideetrifftfarbe.de/cookies/": {
-    "hash": "1e9e576610670cfdbe6e941410be2759e901dd1763b765ed2556a61927ed3e46",
-    "last_changed": "2026-09-17T03:08:27+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "5c56f6c2e6877fb3875eed3fd83ef9dbda9582562e54fa0ac7885decf09684d3",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.ideetrifftfarbe.de/sitemap.xml"
   },
   "https://www.ideetrifftfarbe.de/datenschutzerklaerung/": {
-    "hash": "c36b60512d8071d2495e8b055f81b2f786a4c95d1f497e98fa259299de9e5e4e",
-    "last_changed": "2026-09-17T03:08:27+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "3c7ede9bdfa2ca62069fed49c25eada16da7a323ba78c2df7dbbb72e5587f4be",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.ideetrifftfarbe.de/sitemap.xml"
   },
   "https://www.ideetrifftfarbe.de/details/": {
-    "hash": "3abf54c2f66ac72c704cc499bb3a7980296a78f9a1335b3000aab786b0c1139a",
-    "last_changed": "2026-09-17T03:08:27+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "336f78bd365a368cc18a4156b9db0c78aad3bdd7d25067822e6ccc948bcca8d4",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.ideetrifftfarbe.de/sitemap.xml"
   },
   "https://www.ideetrifftfarbe.de/farben/": {
-    "hash": "28c9fc2c1a63b8959d58da45f0fa81dc979141448d362c68cad002841f6ba124",
-    "last_changed": "2026-09-17T03:08:27+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "7e0966abe886f9064b179bad66b812bd565a77515605cdbea8dbe501906ab8c1",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.ideetrifftfarbe.de/sitemap.xml"
   },
   "https://www.ideetrifftfarbe.de/gedanken/": {
-    "hash": "3e75c209a35d2c01a5deeb1897fcff2c6bb33f1c2e847eca0b43704d910b93ed",
-    "last_changed": "2026-09-17T03:08:27+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "f366f82b733753bdbbee6e3112bea84e0da5adbfe29daa65f3c025025b3b1de0",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.ideetrifftfarbe.de/sitemap.xml"
   },
   "https://www.ideetrifftfarbe.de/impressum/": {
-    "hash": "afaba2ffcdd4a89f3e1cfdefded7e47906b97235a1eee3c6b41486fdbd59a4ec",
-    "last_changed": "2026-09-17T03:08:27+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "ae854884ca17c29bcffa4b5c5547a22ec98d64410c1c20e49cfc7b4e753ccd38",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.ideetrifftfarbe.de/sitemap.xml"
   },
   "https://www.ideetrifftfarbe.de/linien-und-flaechen/": {
-    "hash": "d911a719c19f91be1757e865c7de707eb6523c0b1938b7b8e0805f1af8940e1a",
-    "last_changed": "2026-09-17T03:08:27+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "44f5bd9030d23a7b264641aa75e35464316a2d0dbbbbd79378bc33640fb22800",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.ideetrifftfarbe.de/sitemap.xml"
   },
   "https://www.ideetrifftfarbe.de/verwandlungen/": {
-    "hash": "85a0d69ae1cc0e5b073b98fab826e74c8651aedb28ce8310896583dad7786e7b",
-    "last_changed": "2026-09-17T03:08:27+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "29ca08e02254b04f9b4205f0a9f286daa144d974cf6350e301a8cda19593c0a0",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.ideetrifftfarbe.de/sitemap.xml"
   },
   "https://www.ideetrifftfarbe.de/vita/": {
-    "hash": "be51dc9ee6d9605cf3d45753efc12fc2a2be2b5ffc7c2ba0a75b4cbd69bed52f",
-    "last_changed": "2026-09-17T03:08:27+00:00",
-    "last_checked": "2026-09-17T03:08:27+00:00",
+    "hash": "4dbf192278f8da3ff0d1a29338976c71ccffee067523807cc15f0ac75384fee3",
+    "last_changed": "2026-09-18T03:08:03+00:00",
+    "last_checked": "2026-09-18T03:08:03+00:00",
     "sitemap": "https://www.ideetrifftfarbe.de/sitemap.xml"
   }
 }
