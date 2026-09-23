@@ -1,9 +1,0 @@
---- vorher
-+++ nachher
-@@ -66,5 +66,5 @@
- <link as="script" crossorigin="" fetchpriority="low" href="https://www.3close.de/wp-content/plugins/preloader-plus//assets/js/preloader-plus.min.js" rel="preload" type="text/javascript"/>
- <link as="style" crossorigin="" fetchpriority="low" href="https://www.3close.de/wp-content/plugins/preloader-plus/assets/css/preloader-plus.min.css" rel="preload" type="text/css"/>
--<!-- This site is optimized with the Yoast SEO plugin v28.4 - https://yoast.com/product/yoast-seo-wordpress/ -->
-+<!-- This site is optimized with the Yoast SEO plugin v28.5 - https://yoast.com/product/yoast-seo-wordpress/ -->
- <meta content="Play around with the feComponentTransfer component. This code you can implement on your website without hesitation. 3close provides you a childish experience." name="description"/>
- <link href="https://www.3close.de/answers/?p=4610" rel="canonical"/>

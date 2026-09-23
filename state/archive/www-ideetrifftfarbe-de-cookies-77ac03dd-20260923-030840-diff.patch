@@ -1,0 +1,21 @@
+--- vorher
++++ nachher
+@@ -63,5 +63,5 @@
+ <script id="hitchcock_global-js" src="https://www.ideetrifftfarbe.de/wp-content/themes/hitchcock/assets/js/global.js?ver=2.0.2">
+ </script>
+-<meta content="WordPress 7.1.1" name="generator"/>
++<meta content="WordPress 7.1.2" name="generator"/>
+ <link href="https://www.ideetrifftfarbe.de/cookies/" rel="canonical"/>
+ <link href="https://www.ideetrifftfarbe.de/?p=457" rel="shortlink"/>
+@@ -636,5 +636,5 @@
+ </script>
+ <script id="wp-emoji-settings" type="application/json">
+-{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.ideetrifftfarbe.de/wp-includes/js/wp-emoji-release.min.js?ver=7.1.1"}}
++{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.ideetrifftfarbe.de/wp-includes/js/wp-emoji-release.min.js?ver=7.1.2"}}
+ </script>
+ <script type="module">
+@@ -645,3 +645,3 @@
+ </body>
+ </html>
+-<!-- WP Fastest Cache file was created in 1.343 seconds, on 19. September 2026 @ 11:07 -->
++<!-- WP Fastest Cache file was created in 1.427 seconds, on 22. September 2026 @ 19:09 -->
