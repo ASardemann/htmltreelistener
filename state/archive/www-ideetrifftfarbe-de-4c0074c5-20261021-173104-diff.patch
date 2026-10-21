@@ -1,0 +1,68 @@
+--- vorher
++++ nachher
+@@ -101,5 +101,5 @@
+ }
+ </style>
+-<link href="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/css/front.css?ver=3.0.13" id="modula-css" media="all" rel="stylesheet"/>
++<link href="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/css/front.css?ver=3.0.15" id="modula-css" media="all" rel="stylesheet"/>
+ </head>
+ <body class="home wp-singular page-template-default page page-id-209 wp-theme-hitchcock post single show-preview-titles modula-best-grid-gallery" data-cmplz="1">
+@@ -480,5 +480,5 @@
+ <a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Aufgeblüht 2 • 2022 • Acryl auf Leinwand • 50 x 50 cm" data-image-id="1002" rel="jtg-894" role="button" tabindex="0">
+ </a>
+-<img alt="" class="pic wp-image-1002" crop="" data-caption="Aufgeblüht 2 • 2022 • Acryl auf Leinwand • 50 x 50 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-300x294.jpg" data-valign="middle" decoding="async" height="294" loading="lazy" sizes="auto, (max-width: 600px) 33.33vw, (max-width: 1024px) 33.33vw, 33.33vw" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-300x294.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303.jpg 2251w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-300x294.jpg 300w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-1024x1004.jpg 1024w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-768x753.jpg 768w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-1536x1505.jpg 1536w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-2048x2007.jpg 2048w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-1240x1215.jpg 1240w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-508x498.jpg 508w" title="" width="300"/>
++<img alt="" class="pic wp-image-1002" crop="" data-caption="Aufgeblüht 2 • 2022 • Acryl auf Leinwand • 50 x 50 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-300x294.jpg" data-valign="middle" decoding="async" height="294" loading="lazy" sizes="auto, (max-width: 600px) 34.01vw, (max-width: 1024px) 34.01vw, 34.01vw" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-300x294.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303.jpg 2251w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-300x294.jpg 300w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-1024x1004.jpg 1024w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-768x753.jpg 768w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-1536x1505.jpg 1536w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-2048x2007.jpg 2048w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-1240x1215.jpg 1240w, https://www.ideetrifftfarbe.de/wp-content/uploads/2022/02/IMG_20220219_094303-508x498.jpg 508w" title="" width="300"/>
+ <div class="figc no-title">
+ <div class="figc-inner">
+@@ -506,5 +506,5 @@
+ <a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Aufgeblühtes am frühen Morgen 1 • 2022 • Acryl auf Leinwand • 50 x 50 cm" data-image-id="1517" rel="jtg-894" role="button" tabindex="0">
+ </a>
+-<img alt="" class="pic wp-image-1517" crop="" data-caption="Aufgeblühtes am frühen Morgen 1 • 2022 • Acryl auf Leinwand • 50 x 50 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-300x295.jpg" data-valign="middle" decoding="async" height="295" loading="lazy" sizes="auto, (max-width: 600px) 33.33vw, (max-width: 1024px) 33.33vw, 33.33vw" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-300x295.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-scaled.jpg 2560w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-scaled-300x295.jpg 300w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-1024x1006.jpg 1024w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-768x754.jpg 768w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-1536x1509.jpg 1536w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-2048x2012.jpg 2048w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-1240x1218.jpg 1240w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-508x499.jpg 508w" title="" width="300"/>
++<img alt="" class="pic wp-image-1517" crop="" data-caption="Aufgeblühtes am frühen Morgen 1 • 2022 • Acryl auf Leinwand • 50 x 50 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-300x295.jpg" data-valign="middle" decoding="async" height="295" loading="lazy" sizes="auto, (max-width: 600px) 33.9vw, (max-width: 1024px) 33.9vw, 33.9vw" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-300x295.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-scaled.jpg 2560w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-scaled-300x295.jpg 300w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-1024x1006.jpg 1024w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-768x754.jpg 768w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-1536x1509.jpg 1536w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-2048x2012.jpg 2048w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-1240x1218.jpg 1240w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/PXL_20250907_153755564-508x499.jpg 508w" title="" width="300"/>
+ <div class="figc no-title">
+ <div class="figc-inner">
+@@ -532,5 +532,5 @@
+ <a aria-label="Bilder in Lightbox öffnen" class="tile-inner modula-item-link" data-caption="Aufgeblühtes am frühen Morgen 3 • 2022 • Acryl auf Leinwand • 50 x 50 cm" data-image-id="1522" rel="jtg-894" role="button" tabindex="0">
+ </a>
+-<img alt="" class="pic wp-image-1522" crop="" data-caption="Aufgeblühtes am frühen Morgen 3 • 2022 • Acryl auf Leinwand • 50 x 50 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-300x298.jpg" data-valign="middle" decoding="async" height="298" loading="lazy" sizes="auto, (max-width: 600px) 33.33vw, (max-width: 1024px) 33.33vw, 33.33vw" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-300x298.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-scaled.jpg 2560w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-scaled-300x298.jpg 300w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-1024x1017.jpg 1024w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-150x150.jpg 150w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-768x763.jpg 768w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-1536x1526.jpg 1536w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-2048x2034.jpg 2048w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-1240x1232.jpg 1240w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-508x505.jpg 508w" title="" width="300"/>
++<img alt="" class="pic wp-image-1522" crop="" data-caption="Aufgeblühtes am frühen Morgen 3 • 2022 • Acryl auf Leinwand • 50 x 50 cm" data-full="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03.jpg" data-halign="center" data-src="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-300x298.jpg" data-valign="middle" decoding="async" height="298" loading="lazy" sizes="auto, (max-width: 600px) 33.56vw, (max-width: 1024px) 33.56vw, 33.56vw" src="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-300x298.jpg" srcset="https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-scaled.jpg 2560w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-scaled-300x298.jpg 300w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-1024x1017.jpg 1024w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-150x150.jpg 150w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-768x763.jpg 768w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-1536x1526.jpg 1536w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-2048x2034.jpg 2048w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-1240x1232.jpg 1240w, https://www.ideetrifftfarbe.de/wp-content/uploads/2025/09/Clipboard_09-09-2025_03-508x505.jpg 508w" title="" width="300"/>
+ <div class="figc no-title">
+ <div class="figc-inner">
+@@ -741,9 +741,9 @@
+ <script defer="" id="cmplz-cookiebanner-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1791915617">
+ </script>
+-<script id="modula-isotope-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/isotope.min.js?ver=3.0.13">
+-</script>
+-<script id="modula-isotope-packery-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/isotope-packery.min.js?ver=3.0.13">
+-</script>
+-<script id="dompurify-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/purify.min.js?ver=3.0.13">
++<script id="modula-isotope-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/isotope.min.js?ver=3.0.15">
++</script>
++<script id="modula-isotope-packery-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/isotope-packery.min.js?ver=3.0.15">
++</script>
++<script id="dompurify-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/purify.min.js?ver=3.0.15">
+ </script>
+ <script id="modulaFancybox-js-before">
+@@ -773,7 +773,7 @@
+ //# sourceURL=modulaFancybox-js-before
+ </script>
+-<script id="modulaFancybox-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/modula-fancybox.min.js?ver=3.0.13">
+-</script>
+-<script id="modula-fancybox-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/fancybox.min.js?ver=3.0.13">
++<script id="modulaFancybox-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/modula-fancybox.min.js?ver=3.0.15">
++</script>
++<script id="modula-fancybox-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/fancybox.min.js?ver=3.0.15">
+ </script>
+ <script id="modula-js-before">
+@@ -781,5 +781,5 @@
+ //# sourceURL=modula-js-before
+ </script>
+-<script id="modula-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/jquery-modula.min.js?ver=3.0.13">
++<script id="modula-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/jquery-modula.min.js?ver=3.0.15">
+ </script>
+ <script id="wp-emoji-settings" type="application/json">
+@@ -793,3 +793,3 @@
+ </body>
+ </html>
+-<!-- WP Fastest Cache file was created in 4.150 seconds, on 14. October 2026 @ 21:15 -->
++<!-- WP Fastest Cache file was created in 7.284 seconds, on 21. October 2026 @ 19:29 -->
