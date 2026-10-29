@@ -1,0 +1,8 @@
+--- vorher
++++ nachher
+@@ -996,4 +996,3 @@
+ </body>
+ </html>
+-<!-- WP Fastest Cache file was created in 2.168 seconds, on 28. October 2026 @ 18:57 -->
+-<!-- need to refresh to see cached version -->
++<!-- WP Fastest Cache file was created in 0.530 seconds, on 28. October 2026 @ 19:13 -->
