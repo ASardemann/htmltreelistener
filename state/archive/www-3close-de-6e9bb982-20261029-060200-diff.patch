@@ -1,0 +1,9 @@
+--- vorher
++++ nachher
+@@ -242,5 +242,5 @@
+ </style>
+ <link href="https://www.3close.de/wp-content/themes/twofold-wp-child/style.css?ver=3.8.3" id="style-css" media="all" rel="stylesheet"/>
+-<link href="https://www.3close.de/wp-content/fontsplugin/12b49c1ebb524a30452a092626ffe003.css?ver=4.2.2" id="olympus-google-fonts-css" media="all" rel="stylesheet"/>
++<link href="https://www.3close.de/wp-content/fontsplugin/440d801a733a52c504fef3356b5fea95.css?ver=4.2.3" id="olympus-google-fonts-css" media="all" rel="stylesheet"/>
+ <script id="jquery-core-js" src="https://www.3close.de/wp-includes/js/jquery/jquery.min.js?ver=3.7.1">
+ </script>
