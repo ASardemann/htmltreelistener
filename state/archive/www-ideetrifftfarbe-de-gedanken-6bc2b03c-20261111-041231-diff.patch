@@ -1,0 +1,47 @@
+--- vorher
++++ nachher
+@@ -109,5 +109,5 @@
+ }
+ </style>
+-<link href="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/css/front.css?ver=3.0.18" id="modula-css" media="all" rel="stylesheet"/>
++<link href="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/css/front.css?ver=3.0.19" id="modula-css" media="all" rel="stylesheet"/>
+ </head>
+ <body class="wp-singular page-template-default page page-id-197 wp-theme-hitchcock post single show-preview-titles modula-best-grid-gallery" data-cmplz="1">
+@@ -722,9 +722,9 @@
+ <script defer="" id="cmplz-cookiebanner-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1793859387">
+ </script>
+-<script id="modula-isotope-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/isotope.min.js?ver=3.0.18">
+-</script>
+-<script id="modula-isotope-packery-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/isotope-packery.min.js?ver=3.0.18">
+-</script>
+-<script id="dompurify-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/purify.min.js?ver=3.0.18">
++<script id="modula-isotope-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/isotope.min.js?ver=3.0.19">
++</script>
++<script id="modula-isotope-packery-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/isotope-packery.min.js?ver=3.0.19">
++</script>
++<script id="dompurify-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/purify.min.js?ver=3.0.19">
+ </script>
+ <script id="modulaFancybox-js-before">
+@@ -754,7 +754,7 @@
+ //# sourceURL=modulaFancybox-js-before
+ </script>
+-<script id="modulaFancybox-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/modula-fancybox.min.js?ver=3.0.18">
+-</script>
+-<script id="modula-fancybox-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/fancybox.min.js?ver=3.0.18">
++<script id="modulaFancybox-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/modula-fancybox.min.js?ver=3.0.19">
++</script>
++<script id="modula-fancybox-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/fancybox.min.js?ver=3.0.19">
+ </script>
+ <script id="modula-js-before">
+@@ -762,5 +762,5 @@
+ //# sourceURL=modula-js-before
+ </script>
+-<script id="modula-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/jquery-modula.min.js?ver=3.0.18">
++<script id="modula-js" src="https://www.ideetrifftfarbe.de/wp-content/plugins/modula-best-grid-gallery/assets/js/front/jquery-modula.min.js?ver=3.0.19">
+ </script>
+ <script id="wp-emoji-settings" type="application/json">
+@@ -774,3 +774,3 @@
+ </body>
+ </html>
+-<!-- WP Fastest Cache file was created in 1.482 seconds, on 10. November 2026 @ 14:56 -->
++<!-- WP Fastest Cache file was created in 0.990 seconds, on 11. November 2026 @ 5:11 -->
